@@ -11,6 +11,7 @@ from app.collectors.nvd import collect_nvd_recent
 from app.collectors.security_community import collect_security_community
 from app.collectors.twitter import collect_twitter_alerts
 from app.collectors.vendor_releases import collect_vendor_releases
+from app.enrichment.pipeline import run_enrichment_pipeline
 from app.logging_config import setup_logging
 
 
@@ -88,6 +89,15 @@ def create_scheduler() -> BackgroundScheduler:
         trigger="interval",
         minutes=10,
         id="twitter_alerts",
+        replace_existing=True,
+        coalesce=True,
+        max_instances=1,
+    )
+    scheduler.add_job(
+        run_enrichment_pipeline,
+        trigger="interval",
+        hours=2,
+        id="enrichment_pipeline",
         replace_existing=True,
         coalesce=True,
         max_instances=1,

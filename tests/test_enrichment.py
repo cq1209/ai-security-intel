@@ -5,6 +5,13 @@ import unittest
 
 from app.enrichment.attack import enrich_item_attack, map_attack_chain
 from app.enrichment.papers import _extract_search_terms, _lexical_similarity
+from app.enrichment.pipeline import _jsonl_lines, _strip_mongo_id
+from app.enrichment.remediation import (
+    _cpe_parts,
+    _extract_mitigation,
+    enrich_item_remediation,
+    infer_remediation,
+)
 
 
 class PapersTest(unittest.TestCase):
@@ -57,6 +64,62 @@ class AttackChainTest(unittest.TestCase):
         }
         enrich_item_attack(item)
         self.assertTrue(item["enrichment"]["attack_chain"])
+
+
+class RemediationTest(unittest.TestCase):
+    def test_cpe_parts_parse_vendor_product_version(self) -> None:
+        cve = {
+            "configurations": [
+                {
+                    "nodes": [
+                        {
+                            "cpeMatch": [
+                                {"criteria": "cpe:2.3:a:apache:log4j:2.14.1:*:*:*:*:*:*:*"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+        vendor, product, versions = _cpe_parts(cve)
+        self.assertEqual(vendor, "apache")
+        self.assertEqual(product, "log4j")
+        self.assertIn("2.14.1", versions)
+
+    def test_mitigation_extracts_fixed_version(self) -> None:
+        steps = _extract_mitigation(
+            "The issue has been fixed in version 5.0.0.",
+            "python-social-auth",
+            None,
+        )
+        self.assertTrue(any("5.0.0" in step for step in steps))
+
+    def test_infer_remediation_detects_component(self) -> None:
+        remediation = infer_remediation(
+            {"intel_id": "GHSA-1234", "title": "Ollama", "description": "Ollama path traversal"}
+        )
+        self.assertEqual(remediation["vendor"], "ollama")
+        self.assertTrue(remediation["mitigation_steps"])
+
+    def test_enrich_item_remediation_sets_remediation(self) -> None:
+        item = {
+            "intel_id": "GHSA-1234",
+            "title": "Ollama",
+            "description": "Ollama path traversal",
+            "enrichment": {},
+        }
+        enrich_item_remediation(item)
+        self.assertTrue(item["enrichment"]["remediation"]["mitigation_steps"])
+
+
+class PipelineTest(unittest.TestCase):
+    def test_strip_mongo_id(self) -> None:
+        self.assertNotIn("_id", _strip_mongo_id({"_id": 1, "intel_id": "CVE-1"}))
+
+    def test_jsonl_lines_are_valid(self) -> None:
+        output = _jsonl_lines([{"intel_id": "CVE-1"}, {"intel_id": "CVE-2"}])
+        lines = [line for line in output.splitlines() if line]
+        self.assertEqual(len(lines), 2)
 
 
 if __name__ == "__main__":

@@ -27,3 +27,7 @@ def raw_collection() -> Collection:
 
 def structured_collection() -> Collection:
     return get_db()["structured_intel"]
+
+
+def enriched_collection() -> Collection:
+    return get_db()["enriched_intel"]
