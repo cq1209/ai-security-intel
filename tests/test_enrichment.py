@@ -4,7 +4,7 @@ from __future__ import annotations
 import unittest
 
 from app.enrichment.attack import enrich_item_attack, map_attack_chain
-from app.enrichment.papers import _extract_search_terms, _lexical_similarity
+from app.enrichment.papers import _extract_search_terms, _lexical_similarity, _reconstruct_abstract
 from app.enrichment.pipeline import _jsonl_lines, _strip_mongo_id, normalize_enrichment
 from app.enrichment.remediation import (
     _cpe_parts,
@@ -39,6 +39,10 @@ class PapersTest(unittest.TestCase):
         }
         terms = _extract_search_terms(item)
         self.assertTrue(all(not term.endswith(".") for term in terms))
+
+    def test_reconstruct_abstract_preserves_word_order(self) -> None:
+        inverted = {"security": [0], "of": [1], "pulpcore": [2]}
+        self.assertEqual(_reconstruct_abstract(inverted), "security of pulpcore")
 
 
 class AttackChainTest(unittest.TestCase):

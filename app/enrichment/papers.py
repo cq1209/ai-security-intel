@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 
 ARXIV_API_URL = "https://export.arxiv.org/api/query"
 SEMANTIC_SCHOLAR_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
+OPENALEX_URL = "https://api.openalex.org/works"
 MODEL_NAME = "all-MiniLM-L6-v2"
 
 _STOPWORDS = {
@@ -150,6 +151,58 @@ def _search_arxiv(item: Dict, limit: int = 10) -> List[Dict]:
     return papers
 
 
+def _reconstruct_abstract(inverted_index: Dict) -> str:
+    if not inverted_index:
+        return ""
+    positions: Dict[int, str] = {}
+    for word, positions_list in inverted_index.items():
+        for position in positions_list:
+            positions[position] = word
+    return " ".join(positions[index] for index in sorted(positions))
+
+
+def search_openalex(item: Dict, limit: int = 10) -> List[Dict]:
+    terms = [
+        term
+        for term in _extract_search_terms(item, limit=6)
+        if not re.match(r"^CVE-\d{4}-\d+$", term, re.IGNORECASE)
+    ]
+    query = " ".join(terms[:4])
+    if not query:
+        return []
+    with httpx.Client(timeout=30) as client:
+        response = client.get(
+            OPENALEX_URL,
+            params={
+                "search": query,
+                "per-page": min(max(limit, 1), 50),
+                "sort": "relevance_score:desc",
+            },
+            headers={"User-Agent": "ai-security-intel/0.1"},
+        )
+        response.raise_for_status()
+    results = response.json().get("results", []) or []
+
+    papers: List[Dict] = []
+    for result in results:
+        if not isinstance(result, dict):
+            continue
+        authors = [
+            author.get("author", {}).get("display_name")
+            for author in result.get("authorships", []) or []
+            if isinstance(author, dict) and (author.get("author") or {}).get("display_name")
+        ]
+        papers.append(
+            {
+                "title": re.sub(r"\s+", " ", result.get("title") or "").strip(),
+                "arxiv_id": result.get("doi") or result.get("id"),
+                "authors": authors,
+                "abstract": _reconstruct_abstract(result.get("abstract_inverted_index")),
+            }
+        )
+    return papers
+
+
 def search_semantic_scholar(item: Dict, limit: int = 10) -> List[Dict]:
     terms = [
         term
@@ -188,6 +241,13 @@ def search_semantic_scholar(item: Dict, limit: int = 10) -> List[Dict]:
 
 
 def search_related_papers(item: Dict, limit: int = 10) -> List[Dict]:
+    try:
+        papers = search_openalex(item, limit=limit)
+        if papers:
+            return papers
+    except Exception as exc:
+        logger.info("OpenAlex search failed for %s: %s", item.get("intel_id"), exc)
+
     try:
         papers = _search_arxiv(item, limit=limit)
         if papers:
