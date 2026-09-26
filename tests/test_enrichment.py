@@ -1,0 +1,63 @@
+"""Unit tests for paper and attack-chain enrichment."""
+from __future__ import annotations
+
+import unittest
+
+from app.enrichment.attack import enrich_item_attack, map_attack_chain
+from app.enrichment.papers import _extract_search_terms, _lexical_similarity
+
+
+class PapersTest(unittest.TestCase):
+    def test_identical_text_scores_one(self) -> None:
+        self.assertAlmostEqual(_lexical_similarity("remote code execution", "remote code execution"), 1.0)
+
+    def test_unrelated_text_scores_low(self) -> None:
+        self.assertLess(_lexical_similarity("prompt injection", "differential equations"), 0.5)
+
+    def test_search_terms_extract_cve_id(self) -> None:
+        item = {
+            "intel_id": "CVE-2021-44228",
+            "title": "CVE-2021-44228",
+            "description": "Remote code execution in Apache Log4j2.",
+        }
+        terms = _extract_search_terms(item)
+        self.assertIn("CVE-2021-44228", terms)
+        self.assertTrue(any("log4j2" in term.lower() for term in terms))
+
+
+class AttackChainTest(unittest.TestCase):
+    def test_rce_maps_to_public_facing_application(self) -> None:
+        chain = map_attack_chain("Remote code execution via command injection")
+        ids = [step["technique_id"] for step in chain]
+        self.assertIn("T1190", ids)
+        self.assertIn("T1059", ids)
+
+    def test_prompt_injection_maps_to_atlas(self) -> None:
+        chain = map_attack_chain("Prompt injection allows jailbreaking the model")
+        ids = [step["technique_id"] for step in chain]
+        self.assertIn("AML.T0051", ids)
+        self.assertIn("AML.T0054", ids)
+
+    def test_chain_is_ordered_by_tactic(self) -> None:
+        chain = map_attack_chain(
+            "Remote code execution leading to arbitrary file read and denial of service"
+        )
+        tactics = [step["tactic"] for step in chain]
+        self.assertEqual(tactics, sorted(tactics, key=tactics.index))
+        self.assertIn("Initial Access", tactics)
+        self.assertIn("Collection", tactics)
+        self.assertIn("Impact", tactics)
+
+    def test_enrich_item_sets_chain(self) -> None:
+        item = {
+            "intel_id": "CVE-2026-0001",
+            "title": "CVE-2026-0001",
+            "description": "SQL injection allows remote code execution.",
+            "enrichment": {},
+        }
+        enrich_item_attack(item)
+        self.assertTrue(item["enrichment"]["attack_chain"])
+
+
+if __name__ == "__main__":
+    unittest.main()
