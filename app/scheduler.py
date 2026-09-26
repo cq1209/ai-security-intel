@@ -9,6 +9,7 @@ from app.collectors.domestic_vendors import collect_domestic_vendors
 from app.collectors.ghsa import collect_ghsa
 from app.collectors.nvd import collect_nvd_recent
 from app.collectors.security_community import collect_security_community
+from app.collectors.twitter import collect_twitter_alerts
 from app.collectors.vendor_releases import collect_vendor_releases
 from app.logging_config import setup_logging
 
@@ -78,6 +79,15 @@ def create_scheduler() -> BackgroundScheduler:
         hour="0,12",
         minute=0,
         id="domestic_vendors",
+        replace_existing=True,
+        coalesce=True,
+        max_instances=1,
+    )
+    scheduler.add_job(
+        collect_twitter_alerts,
+        trigger="interval",
+        minutes=10,
+        id="twitter_alerts",
         replace_existing=True,
         coalesce=True,
         max_instances=1,
