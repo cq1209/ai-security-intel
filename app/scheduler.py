@@ -3,7 +3,9 @@ from __future__ import annotations
 
 from apscheduler.schedulers.background import BackgroundScheduler
 
+from app.collectors.arxiv import collect_arxiv
 from app.collectors.cisa_kev import collect_kev
+from app.collectors.domestic_vendors import collect_domestic_vendors
 from app.collectors.ghsa import collect_ghsa
 from app.collectors.nvd import collect_nvd_recent
 from app.collectors.security_community import collect_security_community
@@ -56,6 +58,26 @@ def create_scheduler() -> BackgroundScheduler:
         trigger="interval",
         hours=2,
         id="security_community",
+        replace_existing=True,
+        coalesce=True,
+        max_instances=1,
+    )
+    scheduler.add_job(
+        collect_arxiv,
+        trigger="cron",
+        hour=1,
+        minute=0,
+        id="arxiv",
+        replace_existing=True,
+        coalesce=True,
+        max_instances=1,
+    )
+    scheduler.add_job(
+        collect_domestic_vendors,
+        trigger="cron",
+        hour="0,12",
+        minute=0,
+        id="domestic_vendors",
         replace_existing=True,
         coalesce=True,
         max_instances=1,
