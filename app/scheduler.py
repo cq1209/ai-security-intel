@@ -3,6 +3,8 @@ from __future__ import annotations
 
 from apscheduler.schedulers.background import BackgroundScheduler
 
+from app.collectors.cisa_kev import collect_kev
+from app.collectors.ghsa import collect_ghsa
 from app.collectors.nvd import collect_nvd_recent
 from app.logging_config import setup_logging
 
@@ -15,6 +17,25 @@ def create_scheduler() -> BackgroundScheduler:
         trigger="interval",
         minutes=30,
         id="nvd",
+        replace_existing=True,
+        coalesce=True,
+        max_instances=1,
+    )
+    scheduler.add_job(
+        collect_ghsa,
+        trigger="interval",
+        minutes=30,
+        id="ghsa",
+        replace_existing=True,
+        coalesce=True,
+        max_instances=1,
+    )
+    scheduler.add_job(
+        collect_kev,
+        trigger="cron",
+        hour=2,
+        minute=0,
+        id="cisa_kev",
         replace_existing=True,
         coalesce=True,
         max_instances=1,

@@ -58,6 +58,23 @@ def _contains(text: str, keywords: Iterable[str]) -> bool:
     return any(keyword in lowered for keyword in keywords)
 
 
+def matches_ai_keywords(
+    text: str,
+    component_keywords: Optional[Iterable[str]] = None,
+    text_keywords: Optional[Iterable[str]] = None,
+    blacklist_keywords: Optional[Iterable[str]] = None,
+) -> bool:
+    component_keywords = component_keywords or COMPONENT_KEYWORDS
+    text_keywords = text_keywords or TEXT_KEYWORDS
+    blacklist_keywords = blacklist_keywords or BLACKLIST_KEYWORDS
+
+    lowered = text.lower()
+    component_hit = any(keyword in lowered for keyword in component_keywords)
+    text_hit = any(keyword in lowered for keyword in text_keywords)
+    blacklisted = any(keyword in lowered for keyword in blacklist_keywords)
+    return (component_hit or text_hit) and not blacklisted
+
+
 def cpe_strings(cve: Dict) -> List[str]:
     strings: List[str] = []
     for node in cve.get("configurations", []) or []:
@@ -91,8 +108,9 @@ def is_ai_relevant(
     title = str(cve.get("id") or "").lower()
     haystack = f"{title} {text}".lower()
 
-    component_hit = _contains(f"{cpes} {text}", component_keywords)
-    text_hit = _contains(haystack, text_keywords)
-    blacklisted = _contains(haystack, blacklist_keywords)
-
-    return (component_hit or text_hit) and not blacklisted
+    return matches_ai_keywords(
+        f"{cpes} {haystack}",
+        component_keywords=component_keywords,
+        text_keywords=text_keywords,
+        blacklist_keywords=blacklist_keywords,
+    )
