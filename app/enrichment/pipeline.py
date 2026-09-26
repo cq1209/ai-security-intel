@@ -14,6 +14,7 @@ from app.enrichment.cvss import enrich_item_cvss
 from app.enrichment.papers import enrich_item_papers
 from app.enrichment.poc import enrich_item_poc
 from app.enrichment.remediation import enrich_item_remediation
+from app.logging_config import setup_logging
 
 logger = logging.getLogger(__name__)
 
@@ -131,5 +132,6 @@ def run_enrichment_pipeline(limit: Optional[int] = None) -> Dict:
 
 
 if __name__ == "__main__":
+    setup_logging()
     summary = run_enrichment_pipeline()
     print(json.dumps(summary, ensure_ascii=False, indent=2))

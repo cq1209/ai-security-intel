@@ -31,6 +31,15 @@ class PapersTest(unittest.TestCase):
         self.assertIn("CVE-2021-44228", terms)
         self.assertTrue(any("log4j2" in term.lower() for term in terms))
 
+    def test_search_terms_strip_trailing_punctuation(self) -> None:
+        item = {
+            "intel_id": "CVE-2026-90959",
+            "title": "CVE-2026-90959",
+            "description": "A path traversal was found in pulpcore.",
+        }
+        terms = _extract_search_terms(item)
+        self.assertTrue(all(not term.endswith(".") for term in terms))
+
 
 class AttackChainTest(unittest.TestCase):
     def test_rce_maps_to_public_facing_application(self) -> None:

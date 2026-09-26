@@ -1,4 +1,4 @@
-"""Related paper enrichment via arXiv search and semantic similarity."""
+"""Related paper enrichment via arXiv / Semantic Scholar and semantic similarity."""
 from __future__ import annotations
 
 import logging
@@ -12,6 +12,7 @@ import httpx
 logger = logging.getLogger(__name__)
 
 ARXIV_API_URL = "https://export.arxiv.org/api/query"
+SEMANTIC_SCHOLAR_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
 MODEL_NAME = "all-MiniLM-L6-v2"
 
 _STOPWORDS = {
@@ -99,6 +100,9 @@ def _extract_search_terms(item: Dict, limit: int = 4) -> List[str]:
         terms.append(intel_id.upper())
         seen.add(intel_id.lower())
     for token in re.findall(r"[A-Za-z][A-Za-z0-9._+-]{2,}", text):
+        token = token.strip(".-+")
+        if len(token) < 3:
+            continue
         lowered = token.lower()
         if lowered in seen or lowered in _STOPWORDS or re.fullmatch(r"\d+", token):
             continue
@@ -115,7 +119,7 @@ def _build_query(terms: List[str]) -> str:
     return " OR ".join(clauses)
 
 
-def search_related_papers(item: Dict, limit: int = 10) -> List[Dict]:
+def _search_arxiv(item: Dict, limit: int = 10) -> List[Dict]:
     query = _build_query(_extract_search_terms(item))
     with httpx.Client(timeout=30) as client:
         response = client.get(
@@ -144,6 +148,58 @@ def search_related_papers(item: Dict, limit: int = 10) -> List[Dict]:
             }
         )
     return papers
+
+
+def search_semantic_scholar(item: Dict, limit: int = 10) -> List[Dict]:
+    terms = [
+        term
+        for term in _extract_search_terms(item, limit=6)
+        if not re.match(r"^CVE-\d{4}-\d+$", term, re.IGNORECASE)
+    ]
+    query = " ".join(terms[:4]) or _build_query(_extract_search_terms(item))
+    with httpx.Client(timeout=30) as client:
+        response = client.get(
+            SEMANTIC_SCHOLAR_URL,
+            params={
+                "query": query,
+                "limit": min(max(limit, 1), 30),
+                "fields": "title,abstract,authors,externalIds,url",
+            },
+            headers={"User-Agent": "ai-security-intel/0.1"},
+        )
+        response.raise_for_status()
+    entries = response.json().get("data", []) or []
+
+    papers: List[Dict] = []
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        authors = [author.get("name") for author in entry.get("authors", []) or [] if author.get("name")]
+        external = entry.get("externalIds") or {}
+        papers.append(
+            {
+                "title": re.sub(r"\s+", " ", entry.get("title") or "").strip(),
+                "arxiv_id": external.get("ArXiv") or entry.get("url"),
+                "authors": authors,
+                "abstract": re.sub(r"\s+", " ", entry.get("abstract") or "").strip(),
+            }
+        )
+    return papers
+
+
+def search_related_papers(item: Dict, limit: int = 10) -> List[Dict]:
+    try:
+        papers = _search_arxiv(item, limit=limit)
+        if papers:
+            return papers
+    except Exception as exc:
+        logger.info("arXiv search failed for %s: %s", item.get("intel_id"), exc)
+
+    try:
+        return search_semantic_scholar(item, limit=limit)
+    except Exception as exc:
+        logger.info("Semantic Scholar search failed for %s: %s", item.get("intel_id"), exc)
+        return []
 
 
 def enrich_item_papers(item: Dict, limit: int = 3) -> Dict:
