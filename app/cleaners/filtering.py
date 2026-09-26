@@ -39,6 +39,18 @@ TEXT_KEYWORDS = (
     "generative ai",
 )
 
+SECURITY_KEYWORDS = (
+    "security",
+    "vulnerability",
+    "cve",
+    "advisory",
+    "rce",
+    "remote code execution",
+    "injection",
+    "fix",
+    "patch",
+)
+
 # 明确属于普通 Web 漏洞的词，命中则排除，降低误报。
 BLACKLIST_KEYWORDS = (
     "wordpress",
@@ -73,6 +85,11 @@ def matches_ai_keywords(
     text_hit = any(keyword in lowered for keyword in text_keywords)
     blacklisted = any(keyword in lowered for keyword in blacklist_keywords)
     return (component_hit or text_hit) and not blacklisted
+
+
+def is_security_related(text: str) -> bool:
+    lowered = text.lower()
+    return any(keyword in lowered for keyword in SECURITY_KEYWORDS)
 
 
 def cpe_strings(cve: Dict) -> List[str]:
