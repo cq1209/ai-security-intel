@@ -28,6 +28,15 @@ ENRICHERS = (
     enrich_item_remediation,
 )
 
+DIMENSION_KEYS = {
+    "enrich_item_cvss": "cvss",
+    "enrich_item_poc": "poc",
+    "enrich_item_assets": "affected_assets",
+    "enrich_item_papers": "related_papers",
+    "enrich_item_attack": "attack_chain",
+    "enrich_item_remediation": "remediation",
+}
+
 
 def enrich_item(item: Dict) -> Dict:
     for enrich in ENRICHERS:
@@ -40,6 +49,21 @@ def enrich_item(item: Dict) -> Dict:
                 item.get("intel_id"),
                 exc,
             )
+    return item
+
+
+def normalize_enrichment(item: Dict) -> Dict:
+    enrichment = item.setdefault("enrichment", {})
+    defaults = {
+        "cvss": None,
+        "poc": None,
+        "affected_assets": None,
+        "related_papers": [],
+        "attack_chain": [],
+        "remediation": None,
+    }
+    for key, default in defaults.items():
+        enrichment.setdefault(key, default)
     return item
 
 
@@ -88,9 +112,14 @@ def run_enrichment_pipeline(limit: Optional[int] = None) -> Dict:
     structured = list(cursor)
 
     enriched: List[Dict] = []
+    coverage: Dict[str, int] = {enrich.__name__: 0 for enrich in ENRICHERS}
     for item in structured:
-        result = enrich_item(dict(item))
+        result = normalize_enrichment(enrich_item(dict(item)))
         enriched.append(result)
+        for enrich in ENRICHERS:
+            value = (result.get("enrichment") or {}).get(DIMENSION_KEYS[enrich.__name__])
+            if value:
+                coverage[enrich.__name__] += 1
         enriched_collection().update_one(
             {"fingerprint": item.get("fingerprint")},
             {"$set": _strip_mongo_id(result)},
@@ -98,7 +127,7 @@ def run_enrichment_pipeline(limit: Optional[int] = None) -> Dict:
         )
 
     files = export_outputs(enriched, structured)
-    return {"processed": len(enriched), **files}
+    return {"processed": len(enriched), "coverage": coverage, **files}
 
 
 if __name__ == "__main__":

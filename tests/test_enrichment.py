@@ -5,7 +5,7 @@ import unittest
 
 from app.enrichment.attack import enrich_item_attack, map_attack_chain
 from app.enrichment.papers import _extract_search_terms, _lexical_similarity
-from app.enrichment.pipeline import _jsonl_lines, _strip_mongo_id
+from app.enrichment.pipeline import _jsonl_lines, _strip_mongo_id, normalize_enrichment
 from app.enrichment.remediation import (
     _cpe_parts,
     _extract_mitigation,
@@ -120,6 +120,16 @@ class PipelineTest(unittest.TestCase):
         output = _jsonl_lines([{"intel_id": "CVE-1"}, {"intel_id": "CVE-2"}])
         lines = [line for line in output.splitlines() if line]
         self.assertEqual(len(lines), 2)
+
+    def test_normalize_enrichment_fills_all_dimensions(self) -> None:
+        item = {"intel_id": "CVE-1", "enrichment": {"cvss": {"score": 9.8}}}
+        normalize_enrichment(item)
+        keys = set(item["enrichment"].keys())
+        self.assertTrue(
+            {"cvss", "poc", "affected_assets", "related_papers", "attack_chain", "remediation"} <= keys
+        )
+        self.assertEqual(item["enrichment"]["related_papers"], [])
+        self.assertIsNone(item["enrichment"]["remediation"])
 
 
 if __name__ == "__main__":

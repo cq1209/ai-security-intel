@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import logging
 from collections import Counter
+from datetime import datetime, timezone
 from typing import Dict, List
 
 import httpx
@@ -71,6 +72,7 @@ def aggregate_query(results: Dict, limit: int = 5) -> Dict:
         "exposed_count": total,
         "top_countries": [name for name, _ in countries.most_common(10)],
         "sample_ips": ips[:limit],
+        "query_time": datetime.now(timezone.utc).isoformat(),
     }
 
 
