@@ -7,12 +7,12 @@ from typing import Dict, List
 
 import httpx
 
-from app.config import CENSYS_API_ID, CENSYS_API_SECRET, SHODAN_API_KEY
+from app.config import CENSYS_PAT, SHODAN_API_KEY
 
 logger = logging.getLogger(__name__)
 
 SHODAN_SEARCH_URL = "https://api.shodan.io/shodan/host/search"
-CENSYS_SEARCH_URL = "https://search.censys.io/api/v2/hosts/search"
+CENSYS_SEARCH_URL = "https://api.platform.censys.io/v3/global/search/query"
 
 AI_COMPONENT_QUERIES = (
     "product:ollama",
@@ -38,11 +38,28 @@ def search_censys(query: str, limit: int = 5) -> Dict:
     with httpx.Client(timeout=30) as client:
         response = client.post(
             CENSYS_SEARCH_URL,
-            json={"q": query, "per_page": min(max(limit, 1), 100)},
-            auth=(CENSYS_API_ID, CENSYS_API_SECRET),
+            json={"query": query, "page_size": min(max(limit, 1), 100)},
+            headers={
+                "Authorization": f"Bearer {CENSYS_PAT}",
+                "Accept": "application/json",
+            },
         )
         response.raise_for_status()
-        return response.json()
+    result = response.json().get("result", response.json())
+    hits = result.get("hits", [])
+    matches = []
+    for hit in hits:
+        location = hit.get("location") or {}
+        matches.append(
+            {
+                "ip_str": hit.get("ip") or hit.get("ip_address"),
+                "location": {"country_name": location.get("country") or location.get("country_name")},
+            }
+        )
+    return {
+        "total": result.get("total") or result.get("total_results") or len(hits),
+        "matches": matches,
+    }
 
 
 def aggregate_query(results: Dict, limit: int = 5) -> Dict:
@@ -64,14 +81,9 @@ def collect_asset_exposure(query: str = "product:ollama", limit: int = 5) -> Dic
         except Exception as exc:
             logger.info("Shodan query failed, trying Censys: %s", exc)
 
-    if CENSYS_API_ID and CENSYS_API_SECRET:
+    if CENSYS_PAT:
         try:
-            results = search_censys(query, limit=limit)
-            hits = results.get("result", {}).get("hits", [])
-            return aggregate_query(
-                {"total": results.get("result", {}).get("total", 0), "matches": hits},
-                limit=limit,
-            )
+            return aggregate_query(search_censys(query, limit=limit), limit=limit)
         except Exception as exc:
             logger.info("Censys query failed: %s", exc)
 
