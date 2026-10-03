@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Optional
 
@@ -21,12 +22,35 @@ NVD_DETAIL_URL = "https://nvd.nist.gov/vuln/detail/{cve_id}"
 NVD_KEYWORDS = (
     "tensorflow",
     "pytorch",
+    "torchserve",
     "ollama",
     "vllm",
     "huggingface",
     "transformers",
     "langchain",
     "onnxruntime",
+    "llama",
+    "litellm",
+    "langgraph",
+    "chromadb",
+    "qdrant",
+    "pinecone",
+    "weaviate",
+    "milvus",
+    "deepspeed",
+    "kubeflow",
+    "mlflow",
+    "ray",
+    "dify",
+    "flowise",
+    "autogen",
+    "crewai",
+    "comfyui",
+    "diffusers",
+    "stable diffusion",
+    "paddlepaddle",
+    "jax",
+    "keras",
 )
 
 
@@ -149,37 +173,42 @@ def save_structured(item: Dict) -> None:
     )
 
 
+def _collect_keyword(keyword: str, days_back: int, limit: int) -> Dict:
+    source_key = f"nvd:{keyword}"
+    start = get_last_check_time(source_key) or (_utc_now() - timedelta(days=days_back))
+    end = _utc_now()
+    try:
+        cves = fetch_cves(keyword=keyword, start=start, end=end, limit=limit)
+    except Exception as exc:  # pragma: no cover - network failures are expected
+        logger.warning("Failed to fetch NVD keyword=%s: %s", keyword, exc)
+        return {"raw": 0, "ai_relevant": 0}
+
+    set_last_check_time(source_key, end)
+    raw = 0
+    ai = 0
+    for cve in cves:
+        cve_id = cve.get("id")
+        if not cve_id:
+            continue
+        save_raw(cve)
+        raw += 1
+        if ai_filter.is_ai_relevant(cve):
+            save_structured(to_intel_item(cve))
+            ai += 1
+    return {"raw": raw, "ai_relevant": ai}
+
+
 def collect_nvd_recent(days_back: int = 7, limit_per_keyword: int = 100) -> Dict:
     total_raw = 0
     total_ai = 0
-    seen: set[str] = set()
+    with ThreadPoolExecutor(max_workers=min(len(NVD_KEYWORDS), 8)) as pool:
+        futures = {
+            pool.submit(_collect_keyword, keyword, days_back, limit_per_keyword): keyword
+            for keyword in NVD_KEYWORDS
+        }
+        for future in as_completed(futures):
+            result = future.result()
+            total_raw += result["raw"]
+            total_ai += result["ai_relevant"]
 
-    for keyword in NVD_KEYWORDS:
-        source_key = f"nvd:{keyword}"
-        start = get_last_check_time(source_key) or (_utc_now() - timedelta(days=days_back))
-        end = _utc_now()
-        try:
-            cves = fetch_cves(
-                keyword=keyword,
-                start=start,
-                end=end,
-                limit=limit_per_keyword,
-            )
-        except Exception as exc:  # pragma: no cover - network failures are expected
-            logger.warning("Failed to fetch NVD keyword=%s: %s", keyword, exc)
-            continue
-        set_last_check_time(source_key, end)
-
-        for cve in cves:
-            cve_id = cve.get("id")
-            if not cve_id or cve_id in seen:
-                continue
-            seen.add(cve_id)
-            save_raw(cve)
-            total_raw += 1
-
-            if ai_filter.is_ai_relevant(cve):
-                save_structured(to_intel_item(cve))
-                total_ai += 1
-
-    return {"raw": total_raw, "ai_relevant": total_ai, "unique": len(seen)}
+    return {"raw": total_raw, "ai_relevant": total_ai}

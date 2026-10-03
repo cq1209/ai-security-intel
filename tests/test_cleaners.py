@@ -16,6 +16,20 @@ class FilterTest(unittest.TestCase):
         }
         self.assertTrue(is_ai_relevant(cve))
 
+    def test_new_affected_field_detects_component(self) -> None:
+        cve = {
+            "id": "CVE-2026-0003",
+            "descriptions": [{"lang": "en", "value": "A denial of service vulnerability."}],
+            "affected": [
+                {
+                    "affectedData": [
+                        {"vendor": "vllm-project", "product": "vllm", "packageURL": "pkg:pypi/vllm"}
+                    ]
+                }
+            ],
+        }
+        self.assertTrue(is_ai_relevant(cve))
+
     def test_generic_web_vulnerability_is_filtered(self) -> None:
         cve = {
             "id": "CVE-2026-0002",

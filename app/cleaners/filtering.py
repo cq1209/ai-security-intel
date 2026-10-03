@@ -11,10 +11,16 @@ COMPONENT_KEYWORDS = (
     "ollama",
     "vllm",
     "huggingface",
+    "hugging face",
     "transformers",
     "langchain",
+    "langgraph",
+    "langsmith",
+    "llama-index",
+    "llamaindex",
     "llama.cpp",
     "llamacpp",
+    "llama-cpp",
     "onnxruntime",
     "onnx",
     "deepspeed",
@@ -22,20 +28,49 @@ COMPONENT_KEYWORDS = (
     "kubeflow",
     "mlflow",
     "ray",
+    "litellm",
+    "chromadb",
+    "qdrant",
+    "pinecone",
+    "weaviate",
+    "milvus",
+    "faiss",
+    "dify",
+    "flowise",
+    "anythingllm",
+    "open-webui",
+    "llamafile",
+    "lm-studio",
+    "autogen",
+    "crewai",
+    "gpt4all",
+    "comfyui",
+    "diffusers",
+    "stable-diffusion",
+    "whisper",
+    "paddlepaddle",
+    "jax",
+    "keras",
 )
 
 # 出现在标题或描述中的 AI 安全相关词。
 TEXT_KEYWORDS = (
     "large language model",
+    "large language models",
     "llm",
+    "foundation model",
     "prompt injection",
+    "jailbreak",
     "model poisoning",
+    "model extraction",
+    "model theft",
     "adversarial attack",
     "machine learning",
     "neural network",
     "retrieval augmented generation",
     "rag pipeline",
     "embedding model",
+    "inference server",
     "generative ai",
 )
 
@@ -94,6 +129,19 @@ def is_security_related(text: str) -> bool:
 
 def cpe_strings(cve: Dict) -> List[str]:
     strings: List[str] = []
+    # New NVD 2.0 format uses affected[].affectedData[] instead of configurations.
+    for affected in cve.get("affected", []) or []:
+        for item in affected.get("affectedData", []) or []:
+            vendor = item.get("vendor") or ""
+            product = item.get("product") or ""
+            package_url = item.get("packageURL") or ""
+            if vendor:
+                strings.append(vendor)
+            if product:
+                strings.append(product)
+            if package_url:
+                strings.append(package_url)
+    # Legacy format still uses configurations[].nodes[].cpeMatch[].
     for node in cve.get("configurations", []) or []:
         for match in node.get("nodes", []) or []:
             for cpe in match.get("cpeMatch", []) or []:

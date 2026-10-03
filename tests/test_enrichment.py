@@ -4,6 +4,7 @@ from __future__ import annotations
 import unittest
 
 from app.enrichment.attack import enrich_item_attack, map_attack_chain
+from app.enrichment.assets import _to_fofa_query
 from app.enrichment.papers import _extract_search_terms, _lexical_similarity, _reconstruct_abstract
 from app.enrichment.pipeline import _jsonl_lines, _strip_mongo_id, normalize_enrichment
 from app.enrichment.remediation import (
@@ -77,6 +78,14 @@ class AttackChainTest(unittest.TestCase):
         }
         enrich_item_attack(item)
         self.assertTrue(item["enrichment"]["attack_chain"])
+
+
+class FofaQueryTest(unittest.TestCase):
+    def test_product_query_translation(self) -> None:
+        self.assertEqual(_to_fofa_query("product:ollama"), 'app="ollama"')
+
+    def test_port_query_translation(self) -> None:
+        self.assertEqual(_to_fofa_query("port:11434"), 'port="11434"')
 
 
 class RemediationTest(unittest.TestCase):
