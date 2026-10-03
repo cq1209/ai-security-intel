@@ -349,15 +349,15 @@
   },
   "CVE-2026-100647": {
     "cve_id": "CVE-2026-100647",
-    "vendor": "vllm",
+    "vendor": null,
     "affected_versions": [],
-    "patch_url": null,
+    "patch_url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-wpww-v874-ph2p",
     "mitigation_steps": [
-      "Upgrade vllm to the latest patched version."
+      "Upgrade the affected component to a patched version. See https://github.com/vllm-project/vllm/security/advisories/GHSA-wpww-v874-ph2p"
     ],
     "workaround": null,
-    "verified": false,
-    "status": "temporary_mitigation"
+    "verified": true,
+    "status": "official_patch"
   },
   "CVE-2026-100610": {
     "cve_id": "CVE-2026-100610",
