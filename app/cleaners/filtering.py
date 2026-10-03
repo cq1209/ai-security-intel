@@ -208,6 +208,9 @@ SECURITY_RISK_KEYWORDS = (
     "dos",
     "拒绝服务",
     "denial of service",
+    "out-of-bounds",
+    "out of bounds",
+    "out-of-bounds write",
     "权限提升",
     "privilege escalation",
     "越权",
@@ -231,6 +234,10 @@ SECURITY_RISK_KEYWORDS = (
     "敏感信息",
     "sensitive information",
     "information disclosure",
+    "directory traversal",
+    "authorization",
+    "improper authorization",
+    "adversarial",
     "合规",
     "compliance",
     "政策",
@@ -249,6 +256,13 @@ SECURITY_RISK_KEYWORDS = (
     "exploit",
     "fix",
     "patch",
+    "arxiv",
+    "whitepaper",
+    "technical report",
+    "research paper",
+    "论文",
+    "白皮书",
+    "研究报告",
 )
 
 
@@ -445,7 +459,7 @@ _L2_RULES: Dict[str, tuple] = {
     ),
     "B4": ("privacy", "compliance", "gdpr", "copyright", "隐私", "合规", "数据安全", "敏感信息", "版权"),
     "C1": (
-        "tool call", "privilege escalation", "code interpreter escape",
+        "tool call", "code interpreter escape",
         "工具调用", "越权", "mcp", "插件", "代码解释器逃逸",
     ),
     "C2": ("rag poisoning", "retrieval injection", "citation forgery", "rag投毒", "知识库污染", "检索注入", "引用伪造"),
@@ -481,6 +495,19 @@ _L1_NAMES = {
 
 def classify_tag(text: str) -> Optional[str]:
     """Return the L2 tag (e.g. ``A1``) or ``None`` when it cannot be classified."""
+    # Supply-chain / artifact signals take priority over component names.
+    if any(
+        keyword in text.lower()
+        for keyword in ("supply chain", "third-party", "third party", "model weights", "malicious model")
+    ):
+        for l2 in ("D2", "D1"):
+            if _contains(text, _L2_RULES[l2]):
+                return l2
+    if any(keyword in text.lower() for keyword in ("container", "image poisoning", "镜像", "容器")):
+        for l2 in ("D3",):
+            if _contains(text, _L2_RULES[l2]):
+                return l2
+
     for l2, keywords in _L2_RULES.items():
         if _contains(text, keywords):
             return l2
