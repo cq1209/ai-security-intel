@@ -6,6 +6,7 @@ import logging
 from pathlib import Path
 from typing import Dict, List, Optional
 
+from app.cleaners import filtering as ai_filter
 from app.config import BASE_DIR
 from app.db import enriched_collection, structured_collection
 from app.enrichment.assets import enrich_item_assets
@@ -68,6 +69,18 @@ def normalize_enrichment(item: Dict) -> Dict:
     return item
 
 
+def retag_item(item: Dict) -> Dict:
+    text = " ".join(
+        [item.get("title") or "", item.get("description") or "", " ".join(item.get("tags") or [])]
+    )
+    tags = ai_filter.build_tags(text)
+    if tags:
+        item["tags"] = tags
+    category = ai_filter.tag_category(text)
+    item["ai_relevant"] = category is not None and category != "F"
+    return item
+
+
 def _strip_mongo_id(item: Dict) -> Dict:
     cleaned = dict(item)
     cleaned.pop("_id", None)
@@ -107,7 +120,7 @@ def export_outputs(enriched: List[Dict], structured: List[Dict]) -> Dict:
 
 
 def run_enrichment_pipeline(limit: Optional[int] = None) -> Dict:
-    cursor = structured_collection().find({"ai_relevant": True}).sort("publish_time", -1)
+    cursor = structured_collection().find({}).sort("publish_time", -1)
     if limit:
         cursor = cursor.limit(limit)
     structured = list(cursor)
@@ -115,7 +128,7 @@ def run_enrichment_pipeline(limit: Optional[int] = None) -> Dict:
     enriched: List[Dict] = []
     coverage: Dict[str, int] = {enrich.__name__: 0 for enrich in ENRICHERS}
     for item in structured:
-        result = normalize_enrichment(enrich_item(dict(item)))
+        result = retag_item(normalize_enrichment(enrich_item(dict(item))))
         enriched.append(result)
         for enrich in ENRICHERS:
             value = (result.get("enrichment") or {}).get(DIMENSION_KEYS[enrich.__name__])

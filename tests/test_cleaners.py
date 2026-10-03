@@ -1,10 +1,10 @@
-"""Unit tests for filtering and deduplication."""
+"""Unit tests for filtering, deduplication, and tag classification."""
 from __future__ import annotations
 
 import unittest
 
 from app.cleaners.dedup import make_fingerprint
-from app.cleaners.filtering import is_ai_relevant
+from app.cleaners.filtering import classify_tag, is_ai_relevant, matches_ai_keywords, tag_category
 
 
 class FilterTest(unittest.TestCase):
@@ -37,6 +37,25 @@ class FilterTest(unittest.TestCase):
             "configurations": [],
         }
         self.assertFalse(is_ai_relevant(cve))
+
+    def test_prompt_injection_is_ai_security(self) -> None:
+        self.assertTrue(matches_ai_keywords("Prompt injection leaks the system prompt"))
+
+    def test_ai_only_without_security_is_downgraded(self) -> None:
+        self.assertFalse(matches_ai_keywords("Ollama usage tutorial"))
+
+
+class TagTreeTest(unittest.TestCase):
+    def test_ollama_rce_maps_to_a1(self) -> None:
+        self.assertEqual(classify_tag("Ollama remote code execution"), "A1")
+        self.assertEqual(tag_category("Ollama remote code execution"), "A")
+
+    def test_prompt_injection_maps_to_b1(self) -> None:
+        self.assertEqual(classify_tag("Prompt injection leaks system prompt"), "B1")
+        self.assertEqual(tag_category("Prompt injection"), "B")
+
+    def test_generic_security_maps_to_f(self) -> None:
+        self.assertEqual(tag_category("DrayTek router command injection"), "F")
 
 
 class DedupTest(unittest.TestCase):

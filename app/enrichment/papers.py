@@ -69,6 +69,8 @@ def _lexical_similarity(left: str, right: str) -> float:
 
 
 def _cosine(left: Sequence[float], right: Sequence[float]) -> float:
+    left = [float(value) for value in left]
+    right = [float(value) for value in right]
     if not left or not right:
         return 0.0
     dot = sum(a * b for a, b in zip(left, right))

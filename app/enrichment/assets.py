@@ -86,7 +86,7 @@ def search_fofa(query: str, limit: int = 5) -> Dict:
                 "email": FOFA_EMAIL,
                 "key": FOFA_API_KEY,
                 "qbase64": base64.b64encode(fofa_query.encode("utf-8")).decode("ascii"),
-                "size": min(max(limit, 1), 100),
+                "size": 100,
                 "page": 1,
                 "fields": "ip,country,city",
             },
