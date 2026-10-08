@@ -266,7 +266,7 @@ def search_related_papers(item: Dict, limit: int = 10) -> List[Dict]:
 
 def enrich_item_papers(item: Dict, limit: int = 3) -> Dict:
     enrichment = item.setdefault("enrichment", {})
-    if enrichment.get("related_papers"):
+    if "related_papers" in enrichment:
         return item
 
     query_text = f"{item.get('title') or ''} {item.get('description') or ''}".strip()
@@ -280,6 +280,7 @@ def enrich_item_papers(item: Dict, limit: int = 3) -> Dict:
         return item
 
     if not papers:
+        enrichment["related_papers"] = []
         return item
 
     texts = [f"{paper['title']} {paper['abstract']}" for paper in papers]

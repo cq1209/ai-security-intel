@@ -182,7 +182,7 @@ def map_attack_chain(text: str) -> List[Dict]:
 
 def enrich_item_attack(item: Dict) -> Dict:
     enrichment = item.setdefault("enrichment", {})
-    if enrichment.get("attack_chain"):
+    if "attack_chain" in enrichment:
         return item
 
     text = f"{item.get('title') or ''} {item.get('description') or ''}".strip()

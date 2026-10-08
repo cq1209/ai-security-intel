@@ -61,7 +61,7 @@ def to_poc(repo: Dict) -> Dict:
 
 def enrich_item_poc(item: Dict, limit: int = 3) -> Dict:
     enrichment = item.setdefault("enrichment", {})
-    if enrichment.get("poc") and enrichment["poc"].get("repo_url"):
+    if "poc" in enrichment:
         return item
 
     cve_id = item.get("intel_id") if str(item.get("intel_id", "")).upper().startswith("CVE-") else None
@@ -76,4 +76,11 @@ def enrich_item_poc(item: Dict, limit: int = 3) -> Dict:
 
     if repos:
         enrichment["poc"] = to_poc(repos[0])
+    else:
+        enrichment["poc"] = {
+            "repo_url": None,
+            "file_path": None,
+            "code_snippet": None,
+            "status": "unverified",
+        }
     return item

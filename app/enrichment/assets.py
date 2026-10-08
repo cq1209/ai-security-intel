@@ -151,7 +151,7 @@ def collect_asset_exposure(query: str = "product:ollama", limit: int = 5) -> Dic
 
 def enrich_item_assets(item: Dict, limit: int = 5) -> Dict:
     enrichment = item.setdefault("enrichment", {})
-    if enrichment.get("affected_assets") and enrichment["affected_assets"].get("exposed_count"):
+    if enrichment.get("affected_assets") and enrichment["affected_assets"].get("query_time"):
         return item
 
     text = f"{item.get('title') or ''} {item.get('description') or ''}".lower()
