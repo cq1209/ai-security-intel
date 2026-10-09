@@ -134,31 +134,59 @@ def export_outputs(enriched: List[Dict], structured: List[Dict]) -> Dict:
     }
 
 
-def run_enrichment_pipeline(limit: Optional[int] = None) -> Dict:
+def run_enrichment_pipeline(limit: Optional[int] = None, force: bool = False) -> Dict:
     cursor = structured_collection().find({}).sort("publish_time", -1)
     if limit:
         cursor = cursor.limit(limit)
     structured = list(cursor)
 
+    fingerprints = [item.get("fingerprint") for item in structured if item.get("fingerprint")]
+    already_enriched: Dict = {}
+    if not force:
+        already_enriched = {
+            doc["fingerprint"]: doc
+            for doc in enriched_collection().find({"fingerprint": {"$in": fingerprints}})
+        }
+
     enriched: List[Dict] = []
     coverage: Dict[str, int] = {enrich.__name__: 0 for enrich in ENRICHERS}
+    skipped = 0
     for item in structured:
+        fingerprint = item.get("fingerprint")
+        if not force and fingerprint in already_enriched:
+            existing = already_enriched[fingerprint]
+            enriched.append(_strip_mongo_id(existing))
+            for enrich in ENRICHERS:
+                if _dimension_filled(
+                    (existing.get("enrichment") or {}), DIMENSION_KEYS[enrich.__name__]
+                ):
+                    coverage[enrich.__name__] += 1
+            skipped += 1
+            continue
+
         result = retag_item(normalize_enrichment(enrich_item(dict(item))))
         enriched.append(result)
         for enrich in ENRICHERS:
             if _dimension_filled(result.get("enrichment") or {}, DIMENSION_KEYS[enrich.__name__]):
                 coverage[enrich.__name__] += 1
         enriched_collection().update_one(
-            {"fingerprint": item.get("fingerprint")},
+            {"fingerprint": fingerprint},
             {"$set": _strip_mongo_id(result)},
             upsert=True,
         )
 
     files = export_outputs(enriched, structured)
-    return {"processed": len(enriched), "coverage": coverage, **files}
+    return {
+        "processed": len(structured),
+        "newly_enriched": len(structured) - skipped,
+        "skipped": skipped,
+        "coverage": coverage,
+        **files,
+    }
 
 
 if __name__ == "__main__":
     setup_logging()
-    summary = run_enrichment_pipeline()
+    force = "--force" in __import__("sys").argv
+    summary = run_enrichment_pipeline(force=force)
     print(json.dumps(summary, ensure_ascii=False, indent=2))
