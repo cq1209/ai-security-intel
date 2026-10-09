@@ -40,6 +40,21 @@ DIMENSION_KEYS = {
 }
 
 
+def _dimension_filled(enrichment: Dict, dimension: str) -> bool:
+    value = enrichment.get(dimension)
+    if not value:
+        return False
+    if dimension == "cvss":
+        return value.get("score") is not None
+    if dimension == "poc":
+        return bool(value.get("repo_url"))
+    if dimension == "affected_assets":
+        return bool(value.get("exposed_count"))
+    if dimension == "remediation":
+        return bool(value.get("patch_url") or value.get("mitigation_steps"))
+    return bool(value)
+
+
 def enrich_item(item: Dict) -> Dict:
     for enrich in ENRICHERS:
         try:
@@ -131,8 +146,7 @@ def run_enrichment_pipeline(limit: Optional[int] = None) -> Dict:
         result = retag_item(normalize_enrichment(enrich_item(dict(item))))
         enriched.append(result)
         for enrich in ENRICHERS:
-            value = (result.get("enrichment") or {}).get(DIMENSION_KEYS[enrich.__name__])
-            if value:
+            if _dimension_filled(result.get("enrichment") or {}, DIMENSION_KEYS[enrich.__name__]):
                 coverage[enrich.__name__] += 1
         enriched_collection().update_one(
             {"fingerprint": item.get("fingerprint")},

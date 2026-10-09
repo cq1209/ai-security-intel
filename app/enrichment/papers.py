@@ -3,11 +3,18 @@ from __future__ import annotations
 
 import logging
 import math
+import os
 import re
+import time
 from typing import Dict, List, Sequence
 
 import feedparser
 import httpx
+
+# HuggingFace is often unreachable from mainland networks; route downloads
+# through the public mirror and fail quickly if it is also unavailable.
+os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
+os.environ.setdefault("HF_HUB_DOWNLOAD_TIMEOUT", "20")
 
 logger = logging.getLogger(__name__)
 
@@ -179,6 +186,7 @@ def search_openalex(item: Dict, limit: int = 10) -> List[Dict]:
                 "search": query,
                 "per-page": min(max(limit, 1), 50),
                 "sort": "relevance_score:desc",
+                "mailto": os.getenv("OPENALEX_MAILTO", "ai-security-intel@example.com"),
             },
             headers={"User-Agent": "ai-security-intel/0.1"},
         )
@@ -243,6 +251,8 @@ def search_semantic_scholar(item: Dict, limit: int = 10) -> List[Dict]:
 
 
 def search_related_papers(item: Dict, limit: int = 10) -> List[Dict]:
+    # Gentle pacing to avoid 429 rate limits from the free scholarly APIs.
+    time.sleep(0.4)
     try:
         papers = search_openalex(item, limit=limit)
         if papers:
@@ -267,6 +277,11 @@ def search_related_papers(item: Dict, limit: int = 10) -> List[Dict]:
 def enrich_item_papers(item: Dict, limit: int = 3) -> Dict:
     enrichment = item.setdefault("enrichment", {})
     if "related_papers" in enrichment:
+        return item
+
+    # Generic security (F category) and non-AI items rarely have AI papers.
+    if not item.get("ai_relevant", True):
+        enrichment["related_papers"] = []
         return item
 
     query_text = f"{item.get('title') or ''} {item.get('description') or ''}".strip()

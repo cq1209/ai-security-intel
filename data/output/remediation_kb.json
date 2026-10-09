@@ -1,4 +1,1636 @@
 {
+  "https://www.venustech.com.cn/new_type/sdjd/20250107/28268.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/sdjd/20260309/29203.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/cpdt/20260914/29610.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/cpdt/20260920/29619.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/cpdt/20260930/29661.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/gsxw/20260923/29654.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/gsxw/20260924/29655.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/aqldfx/20260203/29148.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/aqldfx/20260313/29219.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/aqldfx/20260430/29333.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/aqldfx/20260430/29334.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/tsgzjjfa/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/djbhjjfa/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/ylxyjjfa/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/sjaqzt/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/jjyjbg/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/gjywxfx/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/aqldfx/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/sjaqzlpt/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/ldglpt/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/sjaqsx/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/ysd/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/sjfxlxt/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/sjaqjhxt/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/rqfyIPS/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/rqjcIDS/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/kjjfwxt/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.venustech.com.cn/new_type/ldsm/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/4/348/39/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://mp.weixin.qq.com/s/5tKyzo1WOmNTPLjgEfiP6A": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://mp.weixin.qq.com/s/knJq_6tc42Q7g-MTcLT_-g": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/index.php?m=content&c=index&a=lists&catid=92": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2025/648_1010/265.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/1/345/208/": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.net/index.php?act=sec_bug": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/229_1018/32.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/228_1127/42.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/225_0927/17.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/223_0911/2.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/231_1018/34.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2020/442_0527/124.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2020/442_0527/126.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2020/442_0527/127.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/199_1008/58.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/199_1009/65.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/199_1009/67.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2022/199_0424/157.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/350_0927/49.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2020/208_1010/134.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2022/208_1027/171.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2023/208_1218/180.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2024/208_1106/216.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/210_1009/61.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/206_0911/8.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/209_1009/66.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2022/209_0424/159.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/197_1009/69.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/197_0909/1.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "https://www.nsfocus.com.cn/html/2019/197_0909/3.html": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-100227": {
+    "cve_id": "CVE-2026-100227",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://lists.apache.org/thread.html/pst2oopnwt2rwhvkvmt5gdgwn36kq05m",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://lists.apache.org/thread.html/pst2oopnwt2rwhvkvmt5gdgwn36kq05m"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "vendor:langchain:langchain==1.4.4": {
+    "cve_id": null,
+    "vendor": "langchain",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade langchain to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-107716": {
+    "cve_id": "CVE-2026-107716",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/masci/banks/commit/23ed13e50b4e217693fa5f9c30943fac8a41582f",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 2.5.1 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-107717": {
+    "cve_id": "CVE-2026-107717",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/masci/banks/commit/02172b816fb84f6a824cc09a8aca7416f53c12cb",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 2.5.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61442": {
+    "cve_id": "CVE-2026-61442",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/commit/846568c7a5d8ce9e71e56e4c213f027c04909753",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/commit/846568c7a5d8ce9e71e56e4c213f027c04909753"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61434": {
+    "cve_id": "CVE-2026-61434",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-cv3g-hj65-pcfh",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-cv3g-hj65-pcfh"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61445": {
+    "cve_id": "CVE-2026-61445",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-9mp3-24cc-77mg",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-9mp3-24cc-77mg"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61427": {
+    "cve_id": "CVE-2026-61427",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-hc5v-gxvj-58wh",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-hc5v-gxvj-58wh"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-60091": {
+    "cve_id": "CVE-2026-60091",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4w49-gwv8-fpjg",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4w49-gwv8-fpjg"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-60086": {
+    "cve_id": "CVE-2026-60086",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4r3p-w3mc-5v34",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4r3p-w3mc-5v34"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61433": {
+    "cve_id": "CVE-2026-61433",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/commit/1620b49f36945d8cc8ee5635b906c960df5097a0",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/commit/1620b49f36945d8cc8ee5635b906c960df5097a0"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61435": {
+    "cve_id": "CVE-2026-61435",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/commit/2a855c470077c7d2e2479a575f7ef7f548d51c33",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/commit/2a855c470077c7d2e2479a575f7ef7f548d51c33"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61431": {
+    "cve_id": "CVE-2026-61431",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/commit/1620b49f36945d8cc8ee5635b906c960df5097a0",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/commit/1620b49f36945d8cc8ee5635b906c960df5097a0"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-60088": {
+    "cve_id": "CVE-2026-60088",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/commit/3aa9cbc2bd49c23a32be0a89a5e620d13d843eab",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/commit/3aa9cbc2bd49c23a32be0a89a5e620d13d843eab"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-60090": {
+    "cve_id": "CVE-2026-60090",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/commit/3aa9cbc2bd49c23a32be0a89a5e620d13d843eab",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/commit/3aa9cbc2bd49c23a32be0a89a5e620d13d843eab"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-107292": {
+    "cve_id": "CVE-2026-107292",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/pydantic/pydantic-ai/commit/394cc1d31656620704a703a2daed752afa5135fe",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/pydantic/pydantic-ai/commit/394cc1d31656620704a703a2daed752afa5135fe"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-107293": {
+    "cve_id": "CVE-2026-107293",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/pydantic/pydantic-ai/commit/fe9dbed7b7ccf7e7128b5786886e4441f6f5594f",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/pydantic/pydantic-ai/commit/fe9dbed7b7ccf7e7128b5786886e4441f6f5594f"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-107294": {
+    "cve_id": "CVE-2026-107294",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/pydantic/pydantic-ai/commit/7a64d049c3f5271a975cd1d64b2fa876d83ede1d",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/pydantic/pydantic-ai/commit/7a64d049c3f5271a975cd1d64b2fa876d83ede1d"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61443": {
+    "cve_id": "CVE-2026-61443",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-c44f-37qr-gw3f",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-c44f-37qr-gw3f"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61437": {
+    "cve_id": "CVE-2026-61437",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4gfv-wg42-7jw5",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4gfv-wg42-7jw5"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61432": {
+    "cve_id": "CVE-2026-61432",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/commit/1620b49f36945d8cc8ee5635b906c960df5097a0",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/commit/1620b49f36945d8cc8ee5635b906c960df5097a0"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-107290": {
+    "cve_id": "CVE-2026-107290",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/pydantic/pydantic-ai/commit/2faa6181d8a17d83bc9516d035c5270db8730fa0",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/pydantic/pydantic-ai/commit/2faa6181d8a17d83bc9516d035c5270db8730fa0"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-107291": {
+    "cve_id": "CVE-2026-107291",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/pydantic/pydantic-ai/commit/4e013c51a50659aba2adf7853bfb22bb77f6a518",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/pydantic/pydantic-ai/commit/4e013c51a50659aba2adf7853bfb22bb77f6a518"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-107289": {
+    "cve_id": "CVE-2026-107289",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/pydantic/pydantic-ai/commit/02157e1b87bd45d3f2e111ce07afdf89f9fb0e5b",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/pydantic/pydantic-ai/commit/02157e1b87bd45d3f2e111ce07afdf89f9fb0e5b"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61447": {
+    "cve_id": "CVE-2026-61447",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-2xv2-w8cq-5gxw",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-2xv2-w8cq-5gxw"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-60087": {
+    "cve_id": "CVE-2026-60087",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-29r9-67vg-qj56",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-29r9-67vg-qj56"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61430": {
+    "cve_id": "CVE-2026-61430",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-qg25-6gc4-48mg",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-qg25-6gc4-48mg"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-60089": {
+    "cve_id": "CVE-2026-60089",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/commit/3aa9cbc2bd49c23a32be0a89a5e620d13d843eab",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/commit/3aa9cbc2bd49c23a32be0a89a5e620d13d843eab"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "vendor:langchain:langchain-core==1.6.8": {
+    "cve_id": null,
+    "vendor": "langchain",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade langchain to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-103663": {
+    "cve_id": "CVE-2026-103663",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://cert.pl/en/posts/2026/10/CVE-2026-103663/",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 0.35.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "vendor:ollama:v0.40.1": {
+    "cve_id": null,
+    "vendor": "ollama",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade ollama to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-61439": {
+    "cve_id": "CVE-2026-61439",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-fj8f-m44g-c479",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-fj8f-m44g-c479"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105697": {
+    "cve_id": "CVE-2026-105697",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/langflow-ai/langflow/commit/eba285edf1dd4a33bf23a9cb8113c991fcdf3d1d",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/langflow-ai/langflow/commit/eba285edf1dd4a33bf23a9cb8113c991fcdf3d1d"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105698": {
+    "cve_id": "CVE-2026-105698",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/langflow-ai/langflow/commit/fb3d6ec90b1e4d52eaa40915a64b1f86b6542f55",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/langflow-ai/langflow/commit/fb3d6ec90b1e4d52eaa40915a64b1f86b6542f55"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105699": {
+    "cve_id": "CVE-2026-105699",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/langflow-ai/langflow/commit/b8fe970493fd5fb2e1fc71dfccc79f90b76058fa",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 1.9.1 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "vendor:langchain:langchain-fireworks==1.7.1": {
+    "cve_id": null,
+    "vendor": "langchain",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade langchain to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-61429": {
+    "cve_id": "CVE-2026-61429",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-6g59-gm2v-qhvq",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-6g59-gm2v-qhvq"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "vendor:langchain:langchain-huggingface==1.2.3": {
+    "cve_id": null,
+    "vendor": "hugging face",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade hugging face to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-105741": {
+    "cve_id": "CVE-2026-105741",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/langflow-ai/langflow/commit/1f39a4b9d62c9dfa1b21fa7f85e23a180c351b72",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 1.10.3 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-62176": {
+    "cve_id": "CVE-2026-62176",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-g6j7-pffp-8whg",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-g6j7-pffp-8whg"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61436": {
+    "cve_id": "CVE-2026-61436",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/commit/2a855c470077c7d2e2479a575f7ef7f548d51c33",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/commit/2a855c470077c7d2e2479a575f7ef7f548d51c33"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-61428": {
+    "cve_id": "CVE-2026-61428",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-qj9c-59p6-8cgx",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-qj9c-59p6-8cgx"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-46437": {
+    "cve_id": "CVE-2026-46437",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/wger-project/wger/releases/tag/2.6",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/wger-project/wger/releases/tag/2.6"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-45161": {
+    "cve_id": "CVE-2026-45161",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/wger-project/wger/releases/tag/2.6",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/wger-project/wger/releases/tag/2.6"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-43976": {
+    "cve_id": "CVE-2026-43976",
+    "vendor": "dify",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade dify to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-107183": {
+    "cve_id": "CVE-2026-107183",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/ggml-org/llama.cpp",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/ggml-org/llama.cpp"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "vendor:transformers:v5.19.0": {
+    "cve_id": null,
+    "vendor": "huggingface",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade huggingface to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "vendor:langchain:langchain-core==1.6.7": {
+    "cve_id": null,
+    "vendor": "langchain",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade langchain to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-j8f7-x8jm-wmm4": {
+    "cve_id": null,
+    "vendor": "ollama",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade ollama to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-10561": {
+    "cve_id": "CVE-2026-10561",
+    "vendor": "langflow",
+    "affected_versions": [],
+    "patch_url": "https://www.ibm.com/support/pages/node/7277242",
+    "mitigation_steps": [
+      "Upgrade langflow to a patched version. See https://www.ibm.com/support/pages/node/7277242"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-106119": {
+    "cve_id": "CVE-2026-106119",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/langchain-ai/langchainjs/commit/946e3d856ff1f8ce7f7b9374c83f680a6ada79af",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 1.3.1 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105922": {
+    "cve_id": "CVE-2026-105922",
+    "vendor": "vllm",
+    "affected_versions": [],
+    "patch_url": "https://gist.github.com/Yunzez/5c70a3bb328eaf6d646b9d31e879dc4a#file-repro_prompt_embeds_penalties_engine_crash-py",
+    "mitigation_steps": [
+      "Upgrade vllm to a patched version. See https://gist.github.com/Yunzez/5c70a3bb328eaf6d646b9d31e879dc4a#file-repro_prompt_embeds_penalties_engine_crash-py"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105799": {
+    "cve_id": "CVE-2026-105799",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/langchain-ai/langchainjs/commit/880e3969ea643a2147777a4d5e8bd606a697edf7",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 1.1.1 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "GHSA-f4ch-vxwc-3p2m": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-105753": {
+    "cve_id": "CVE-2026-105753",
+    "vendor": "vllm",
+    "affected_versions": [],
+    "patch_url": "https://github.com/vllm-project/vllm/commit/396204230423b7cc6798300926b8fa30190d26a9",
+    "mitigation_steps": [
+      "Upgrade vllm to version 0.28.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105752": {
+    "cve_id": "CVE-2026-105752",
+    "vendor": "vllm",
+    "affected_versions": [],
+    "patch_url": "https://github.com/vllm-project/vllm/commit/6a2a2bb02b563b83f946012959fd3927984d072a",
+    "mitigation_steps": [
+      "Upgrade vllm to version 0.30.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105758": {
+    "cve_id": "CVE-2026-105758",
+    "vendor": "vllm",
+    "affected_versions": [],
+    "patch_url": "https://github.com/vllm-project/vllm/commit/ea723c81c3ea26425cb69503a5d5e90822a04a45",
+    "mitigation_steps": [
+      "Upgrade vllm to version 0.30.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105760": {
+    "cve_id": "CVE-2026-105760",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/vllm-project/vllm/commit/8b6de0eb9a09ef53f20cf06bd4d17ee264b9c2a7",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 0.30.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105754": {
+    "cve_id": "CVE-2026-105754",
+    "vendor": "vllm",
+    "affected_versions": [],
+    "patch_url": "https://github.com/vllm-project/vllm/commit/1970f3ed4be7fa8620e4ddc4a12c36a8384cfc27",
+    "mitigation_steps": [
+      "Upgrade vllm to version 0.30.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105757": {
+    "cve_id": "CVE-2026-105757",
+    "vendor": "vllm",
+    "affected_versions": [],
+    "patch_url": "https://github.com/vllm-project/vllm/commit/c55e15a44ec4127832d4a86928a356fdd9e68dbd",
+    "mitigation_steps": [
+      "Upgrade vllm to version 0.30.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105755": {
+    "cve_id": "CVE-2026-105755",
+    "vendor": "vllm",
+    "affected_versions": [],
+    "patch_url": "https://github.com/vllm-project/vllm/commit/ee17d0d869203ef9a35ad73358a4987bba14b1fc",
+    "mitigation_steps": [
+      "Upgrade vllm to version 0.30.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105756": {
+    "cve_id": "CVE-2026-105756",
+    "vendor": "vllm",
+    "affected_versions": [],
+    "patch_url": "https://github.com/vllm-project/vllm/commit/e962733e08d10f7ca65dac4df99e116460b8b174",
+    "mitigation_steps": [
+      "Upgrade vllm to version 0.30.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-104851": {
+    "cve_id": "CVE-2026-104851",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/fsspec/filesystem_spec/commit/86438783f93b1398ef245b92f0e6063b445b611c",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 2026.6.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "GHSA-v853-p72q-4cfw": {
+    "cve_id": null,
+    "vendor": "docker",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade docker to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-104873": {
+    "cve_id": "CVE-2026-104873",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/langchain-ai/langgraph/commit/5a77be5e8bec1600ad0a865638d88c1368497559",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 0.4.4 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-9205": {
+    "cve_id": "CVE-2026-9205",
+    "vendor": "langflow",
+    "affected_versions": [],
+    "patch_url": "https://www.ibm.com/support/pages/node/7282648",
+    "mitigation_steps": [
+      "Upgrade langflow to a patched version. See https://www.ibm.com/support/pages/node/7282648"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-8505": {
+    "cve_id": "CVE-2026-8505",
+    "vendor": "langflow",
+    "affected_versions": [],
+    "patch_url": "https://www.ibm.com/support/pages/node/7278921",
+    "mitigation_steps": [
+      "Upgrade langflow to a patched version. See https://www.ibm.com/support/pages/node/7278921"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-51886": {
+    "cve_id": "CVE-2026-51886",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://gist.github.com/Ro1ME/c11b1e63e4e8fca6b25275144f25ec2a",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://gist.github.com/Ro1ME/c11b1e63e4e8fca6b25275144f25ec2a"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-7700": {
+    "cve_id": "CVE-2026-7700",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/langflow-ai/langflow/",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/langflow-ai/langflow/"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105775": {
+    "cve_id": "CVE-2026-105775",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/vllm-project/vllm/",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/vllm-project/vllm/"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105762": {
+    "cve_id": "CVE-2026-105762",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/langgenius/dify/commit/2f87ecc0ce1d05ab3ef9537f29b84a5fa5823017",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 1.13.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105761": {
+    "cve_id": "CVE-2026-105761",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/langgenius/dify/commit/62cb5b586504b730731e28e743c038b72950058e",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 1.16.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105759": {
+    "cve_id": "CVE-2026-105759",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/vllm-project/vllm/commit/3735c2d5f5248259482b9045c34fb7a8a3892352",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 0.30.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "vendor:vllm:v0.31.0": {
+    "cve_id": null,
+    "vendor": "vllm",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade vllm to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-105145": {
+    "cve_id": "CVE-2026-105145",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://gist.github.com/DReazer/63d8096046a058f9c7a533846db5e2ac",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://gist.github.com/DReazer/63d8096046a058f9c7a533846db5e2ac"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-105115": {
+    "cve_id": "CVE-2026-105115",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-wxmx-q96f-w4gw",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-wxmx-q96f-w4gw"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
   "CVE-2026-71416": {
     "cve_id": "CVE-2026-71416",
     "vendor": null,
@@ -10,6 +1642,18 @@
     "workaround": null,
     "verified": true,
     "status": "official_patch"
+  },
+  "GHSA-v2f8-6655-7grj": {
+    "cve_id": null,
+    "vendor": "docker",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade docker to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
   },
   "GHSA-5rmq-chc7-m22f": {
     "cve_id": null,
@@ -47,17 +1691,17 @@
     "verified": false,
     "status": "temporary_mitigation"
   },
-  "CVE-2026-104873": {
-    "cve_id": "CVE-2026-104873",
+  "GHSA-qqw9-2vj9-hx7r": {
+    "cve_id": null,
     "vendor": null,
     "affected_versions": [],
-    "patch_url": "https://github.com/langchain-ai/langgraph/commit/5a77be5e8bec1600ad0a865638d88c1368497559",
+    "patch_url": null,
     "mitigation_steps": [
-      "Upgrade the affected component to version 0.4.4 or later."
+      "Upgrade the affected AI component to the latest patched version."
     ],
     "workaround": null,
-    "verified": true,
-    "status": "official_patch"
+    "verified": false,
+    "status": "temporary_mitigation"
   },
   "CVE-2026-51884": {
     "cve_id": "CVE-2026-51884",
@@ -145,11 +1789,11 @@
   },
   "CVE-2026-101918": {
     "cve_id": "CVE-2026-101918",
-    "vendor": null,
+    "vendor": "pyjwt_project",
     "affected_versions": [],
     "patch_url": "https://github.com/jpadilla/pyjwt/commit/5fde08a6cf906aa7698de2d6391d88b73006b17b",
     "mitigation_steps": [
-      "Upgrade the affected component to version 2.15.0 or later."
+      "Upgrade pyjwt to version 2.15.0 or later."
     ],
     "workaround": null,
     "verified": true,
@@ -169,11 +1813,11 @@
   },
   "CVE-2026-103241": {
     "cve_id": "CVE-2026-103241",
-    "vendor": null,
+    "vendor": "vllm",
     "affected_versions": [],
-    "patch_url": "https://gist.github.com/Yunzez/8e98d656aa667095b513161eb056d28e",
+    "patch_url": "https://github.com/vllm-project/vllm/commit/3439bad37e68ba9755a46f4f6b44a4aeaf1f60a9",
     "mitigation_steps": [
-      "Upgrade the affected component to a patched version. See https://gist.github.com/Yunzez/8e98d656aa667095b513161eb056d28e"
+      "Upgrade vllm to a patched version. See https://github.com/vllm-project/vllm/commit/3439bad37e68ba9755a46f4f6b44a4aeaf1f60a9"
     ],
     "workaround": null,
     "verified": true,
@@ -181,11 +1825,13 @@
   },
   "CVE-2026-102265": {
     "cve_id": "CVE-2026-102265",
-    "vendor": null,
-    "affected_versions": [],
+    "vendor": "pyjwt_project",
+    "affected_versions": [
+      "2.13.0"
+    ],
     "patch_url": "https://github.com/jpadilla/pyjwt/commit/06573692ebcdec8831c3927513b3e87c31fbbb62",
     "mitigation_steps": [
-      "Upgrade the affected component to version 2.14.0 or later."
+      "Upgrade pyjwt to version 2.14.0 or later."
     ],
     "workaround": null,
     "verified": true,
@@ -193,11 +1839,13 @@
   },
   "CVE-2026-102273": {
     "cve_id": "CVE-2026-102273",
-    "vendor": null,
-    "affected_versions": [],
+    "vendor": "pyjwt_project",
+    "affected_versions": [
+      "2.13.0"
+    ],
     "patch_url": "https://github.com/jpadilla/pyjwt/commit/801cd128528c62d9b23fcd161d1a2e1c17982f95",
     "mitigation_steps": [
-      "Upgrade the affected component to version 2.14.0 or later."
+      "Upgrade pyjwt to version 2.14.0 or later."
     ],
     "workaround": null,
     "verified": true,
@@ -301,11 +1949,11 @@
   },
   "CVE-2026-100651": {
     "cve_id": "CVE-2026-100651",
-    "vendor": null,
+    "vendor": "vllm",
     "affected_versions": [],
     "patch_url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-3mqx-f33v-vgp9",
     "mitigation_steps": [
-      "Upgrade the affected component to version 0.29.0 or later."
+      "Upgrade vllm to version 0.29.0 or later."
     ],
     "workaround": null,
     "verified": true,
@@ -313,11 +1961,11 @@
   },
   "CVE-2026-100650": {
     "cve_id": "CVE-2026-100650",
-    "vendor": null,
+    "vendor": "vllm",
     "affected_versions": [],
     "patch_url": "https://github.com/vllm-project/vllm/commit/752a3a504485790a2e8491cacbb35c137339ad34",
     "mitigation_steps": [
-      "Upgrade the affected component to a patched version. See https://github.com/vllm-project/vllm/commit/752a3a504485790a2e8491cacbb35c137339ad34"
+      "Upgrade vllm to a patched version. See https://github.com/vllm-project/vllm/commit/752a3a504485790a2e8491cacbb35c137339ad34"
     ],
     "workaround": null,
     "verified": true,
@@ -325,11 +1973,11 @@
   },
   "CVE-2026-100649": {
     "cve_id": "CVE-2026-100649",
-    "vendor": null,
+    "vendor": "vllm",
     "affected_versions": [],
     "patch_url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-j682-9xp5-rrf3",
     "mitigation_steps": [
-      "Upgrade the affected component to a patched version. See https://github.com/vllm-project/vllm/security/advisories/GHSA-j682-9xp5-rrf3"
+      "Upgrade vllm to a patched version. See https://github.com/vllm-project/vllm/security/advisories/GHSA-j682-9xp5-rrf3"
     ],
     "workaround": null,
     "verified": true,
@@ -337,11 +1985,11 @@
   },
   "CVE-2026-100648": {
     "cve_id": "CVE-2026-100648",
-    "vendor": null,
+    "vendor": "vllm",
     "affected_versions": [],
     "patch_url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-jcq2-4gch-5qhf",
     "mitigation_steps": [
-      "Upgrade the affected component to a patched version. See https://github.com/vllm-project/vllm/security/advisories/GHSA-jcq2-4gch-5qhf"
+      "Upgrade vllm to a patched version. See https://github.com/vllm-project/vllm/security/advisories/GHSA-jcq2-4gch-5qhf"
     ],
     "workaround": null,
     "verified": true,
@@ -349,11 +1997,11 @@
   },
   "CVE-2026-100647": {
     "cve_id": "CVE-2026-100647",
-    "vendor": null,
+    "vendor": "vllm",
     "affected_versions": [],
     "patch_url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-wpww-v874-ph2p",
     "mitigation_steps": [
-      "Upgrade the affected component to a patched version. See https://github.com/vllm-project/vllm/security/advisories/GHSA-wpww-v874-ph2p"
+      "Upgrade vllm to a patched version. See https://github.com/vllm-project/vllm/security/advisories/GHSA-wpww-v874-ph2p"
     ],
     "workaround": null,
     "verified": true,
@@ -685,11 +2333,11 @@
   },
   "CVE-2026-69147": {
     "cve_id": "CVE-2026-69147",
-    "vendor": null,
+    "vendor": "vllm",
     "affected_versions": [],
     "patch_url": "https://github.com/vllm-project/vllm/commit/283893c72292ede38d277e3cd2b9b64c3e4f1dda",
     "mitigation_steps": [
-      "Upgrade the affected component to a patched version. See https://github.com/vllm-project/vllm/commit/283893c72292ede38d277e3cd2b9b64c3e4f1dda"
+      "Upgrade vllm to a patched version. See https://github.com/vllm-project/vllm/commit/283893c72292ede38d277e3cd2b9b64c3e4f1dda"
     ],
     "workaround": null,
     "verified": true,
@@ -839,6 +2487,18 @@
     "verified": true,
     "status": "official_patch"
   },
+  "CVE-2026-61539": {
+    "cve_id": "CVE-2026-61539",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/xorbitsai/inference/commit/1b3d220f342ce68d34cec4586d9409d457dadc42",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 2.7.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
   "CVE-2026-64849": {
     "cve_id": "CVE-2026-64849",
     "vendor": "MLflow",
@@ -862,6 +2522,18 @@
     ],
     "verified": true,
     "status": "official_patch"
+  },
+  "GHSA-x3jw-7gj7-qv6m": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
   },
   "vendor:vllm:v0.27.0": {
     "cve_id": null,
@@ -935,6 +2607,18 @@
     "verified": true,
     "status": "official_patch"
   },
+  "GHSA-9cc5-j3qq-69gv": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
   "CVE-2026-58659": {
     "cve_id": "CVE-2026-58659",
     "vendor": "lightningai",
@@ -946,6 +2630,114 @@
     "workaround": null,
     "verified": true,
     "status": "official_patch"
+  },
+  "GHSA-5866-9272-qcfv": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-gp65-m7q3-4vjw": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-5r2q-3wg3-57m2": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-wj29-gm8v-33x8": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-mhgx-w3w5-2rvc": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-4mp6-8448-9vgv": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-5c3v-h6hw-4gx7": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-rrqj-82cc-g6h4": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "vendor:pytorch:v2.13.0": {
+    "cve_id": null,
+    "vendor": "triton",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade triton to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
   },
   "GHSA-q8qp-8jq6-78mc": {
     "cve_id": null,
@@ -983,6 +2775,18 @@
     "verified": true,
     "status": "official_patch"
   },
+  "CVE-2026-2651": {
+    "cve_id": "CVE-2026-2651",
+    "vendor": "lfprojects",
+    "affected_versions": [],
+    "patch_url": "https://github.com/mlflow/mlflow/commit/d7290811d8f3c95366d80109424edc1fb1ad966f",
+    "mitigation_steps": [
+      "Upgrade mlflow to a patched version. See https://github.com/mlflow/mlflow/commit/d7290811d8f3c95366d80109424edc1fb1ad966f"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
   "CVE-2026-34926": {
     "cve_id": "CVE-2026-34926",
     "vendor": "Trend Micro",
@@ -992,6 +2796,66 @@
     "mitigation_steps": [
       "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable."
     ],
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-2611": {
+    "cve_id": "CVE-2026-2611",
+    "vendor": "lfprojects",
+    "affected_versions": [],
+    "patch_url": "https://github.com/mlflow/mlflow/commit/8f9c8a53af90842944101eb8b7d60706822c81bc",
+    "mitigation_steps": [
+      "Upgrade mlflow to a patched version. See https://github.com/mlflow/mlflow/commit/8f9c8a53af90842944101eb8b7d60706822c81bc"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-45829": {
+    "cve_id": "CVE-2026-45829",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/chroma-core/chroma/issues/6717",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/chroma-core/chroma/issues/6717"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "vendor:pytorch:v2.12.0": {
+    "cve_id": null,
+    "vendor": "triton",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade triton to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-hhxr-7j22-694r": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-42208": {
+    "cve_id": "CVE-2026-42208",
+    "vendor": "litellm",
+    "affected_versions": [],
+    "patch_url": "https://github.com/BerriAI/litellm/security/advisories/GHSA-r75f-5x8p-qvmc",
+    "mitigation_steps": [
+      "Upgrade litellm to version 1.83.7 or later."
+    ],
+    "workaround": null,
     "verified": true,
     "status": "official_patch"
   },
@@ -1042,6 +2906,18 @@
     "workaround": null,
     "verified": false,
     "status": "temporary_mitigation"
+  },
+  "CVE-2026-27483": {
+    "cve_id": "CVE-2026-27483",
+    "vendor": "mindsdb",
+    "affected_versions": [],
+    "patch_url": "https://github.com/mindsdb/mindsdb/commit/87a44bdb2b97f963e18f10a068e1a1e2690505ef",
+    "mitigation_steps": [
+      "Upgrade mindsdb to a patched version. See https://github.com/mindsdb/mindsdb/commit/87a44bdb2b97f963e18f10a068e1a1e2690505ef"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
   },
   "vendor:tensorflow:v2.21.0-rc0": {
     "cve_id": null,
@@ -1295,8 +3171,8 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2019-7194": {
-    "cve_id": "CVE-2019-7194",
+  "CVE-2019-7195": {
+    "cve_id": "CVE-2019-7195",
     "vendor": "QNAP",
     "affected_versions": [
       "Photo Station"
@@ -1307,8 +3183,8 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2019-7195": {
-    "cve_id": "CVE-2019-7195",
+  "CVE-2019-7194": {
+    "cve_id": "CVE-2019-7194",
     "vendor": "QNAP",
     "affected_versions": [
       "Photo Station"
@@ -1391,11 +3267,11 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2017-9248": {
-    "cve_id": "CVE-2017-9248",
-    "vendor": "Progress",
+  "CVE-2019-17026": {
+    "cve_id": "CVE-2019-17026",
+    "vendor": "Mozilla",
     "affected_versions": [
-      "ASP.NET AJAX and Sitefinity"
+      "Firefox and Thunderbird"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
@@ -1427,11 +3303,11 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2019-16256": {
-    "cve_id": "CVE-2019-16256",
-    "vendor": "SIMalliance",
+  "CVE-2017-9248": {
+    "cve_id": "CVE-2017-9248",
+    "vendor": "Progress",
     "affected_versions": [
-      "Toolbox Browser"
+      "ASP.NET AJAX and Sitefinity"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
@@ -1439,11 +3315,11 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2019-18935": {
-    "cve_id": "CVE-2019-18935",
-    "vendor": "Progress",
+  "CVE-2021-28664": {
+    "cve_id": "CVE-2021-28664",
+    "vendor": "Arm",
     "affected_versions": [
-      "Telerik UI for ASP.NET AJAX"
+      "Mali Graphics Processing Unit (GPU)"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
@@ -1463,11 +3339,11 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2019-17026": {
-    "cve_id": "CVE-2019-17026",
-    "vendor": "Mozilla",
+  "CVE-2019-18935": {
+    "cve_id": "CVE-2019-18935",
+    "vendor": "Progress",
     "affected_versions": [
-      "Firefox and Thunderbird"
+      "Telerik UI for ASP.NET AJAX"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
@@ -1475,11 +3351,11 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2021-28664": {
-    "cve_id": "CVE-2021-28664",
-    "vendor": "Arm",
+  "CVE-2019-16256": {
+    "cve_id": "CVE-2019-16256",
+    "vendor": "SIMalliance",
     "affected_versions": [
-      "Mali Graphics Processing Unit (GPU)"
+      "Toolbox Browser"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
