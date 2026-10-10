@@ -164,7 +164,7 @@ def run_enrichment_pipeline(limit: Optional[int] = None, force: bool = False) ->
             skipped += 1
             continue
 
-        result = retag_item(normalize_enrichment(enrich_item(dict(item))))
+        result = normalize_enrichment(enrich_item(retag_item(dict(item))))
         enriched.append(result)
         for enrich in ENRICHERS:
             if _dimension_filled(result.get("enrichment") or {}, DIMENSION_KEYS[enrich.__name__]):

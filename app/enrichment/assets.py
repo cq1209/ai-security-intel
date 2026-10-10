@@ -154,6 +154,16 @@ def enrich_item_assets(item: Dict, limit: int = 5) -> Dict:
     if enrichment.get("affected_assets") and enrichment["affected_assets"].get("query_time"):
         return item
 
+    # Generic security (F category) has no AI component to scan for exposure.
+    if not item.get("ai_relevant", True):
+        enrichment["affected_assets"] = {
+            "exposed_count": 0,
+            "top_countries": [],
+            "sample_ips": [],
+            "query_time": datetime.now(timezone.utc).isoformat(),
+        }
+        return item
+
     text = f"{item.get('title') or ''} {item.get('description') or ''}".lower()
     if "ollama" in text:
         query = "product:ollama"
