@@ -1,4 +1,100 @@
 {
+  "CVE-2026-108760": {
+    "cve_id": "CVE-2026-108760",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/llama-farm/llamafarm",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/llama-farm/llamafarm"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-107841": {
+    "cve_id": "CVE-2026-107841",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/john-broadway/pacioli/commit/f3c7219f5dde6050bd7921e0ac55afd02771250c",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 0.10.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "GHSA-9q47-3cm2-2rp8": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-jq7h-wrvp-3rgx": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-889w-m37p-88m5": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-fr26-jjhm-638c": {
+    "cve_id": null,
+    "vendor": "docker",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade docker to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "GHSA-r44w-v6gf-x3p6": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-48484": {
+    "cve_id": "CVE-2026-48484",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/pyload/pyload/blob/8e447958b8a66c5899775e725a8b90bce6643004/src/pyload/webui/app/blueprints/api_blueprint.py#L73",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/pyload/pyload/blob/8e447958b8a66c5899775e725a8b90bce6643004/src/pyload/webui/app/blueprints/api_blueprint.py#L73"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
   "https://www.venustech.com.cn/new_type/sdjd/20250107/28268.html": {
     "cve_id": null,
     "vendor": null,
@@ -2655,6 +2751,18 @@
     "verified": false,
     "status": "temporary_mitigation"
   },
+  "GHSA-mhgx-w3w5-2rvc": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
   "GHSA-5r2q-3wg3-57m2": {
     "cve_id": null,
     "vendor": null,
@@ -2679,18 +2787,6 @@
     "verified": false,
     "status": "temporary_mitigation"
   },
-  "GHSA-mhgx-w3w5-2rvc": {
-    "cve_id": null,
-    "vendor": null,
-    "affected_versions": [],
-    "patch_url": null,
-    "mitigation_steps": [
-      "Upgrade the affected AI component to the latest patched version."
-    ],
-    "workaround": null,
-    "verified": false,
-    "status": "temporary_mitigation"
-  },
   "GHSA-4mp6-8448-9vgv": {
     "cve_id": null,
     "vendor": null,
@@ -2703,7 +2799,7 @@
     "verified": false,
     "status": "temporary_mitigation"
   },
-  "GHSA-5c3v-h6hw-4gx7": {
+  "GHSA-rrqj-82cc-g6h4": {
     "cve_id": null,
     "vendor": null,
     "affected_versions": [],
@@ -2715,7 +2811,7 @@
     "verified": false,
     "status": "temporary_mitigation"
   },
-  "GHSA-rrqj-82cc-g6h4": {
+  "GHSA-5c3v-h6hw-4gx7": {
     "cve_id": null,
     "vendor": null,
     "affected_versions": [],
@@ -3063,8 +3159,8 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2021-20123": {
-    "cve_id": "CVE-2021-20123",
+  "CVE-2021-20124": {
+    "cve_id": "CVE-2021-20124",
     "vendor": "DrayTek",
     "affected_versions": [
       "VigorConnect"
@@ -3075,8 +3171,8 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2021-20124": {
-    "cve_id": "CVE-2021-20124",
+  "CVE-2021-20123": {
+    "cve_id": "CVE-2021-20123",
     "vendor": "DrayTek",
     "affected_versions": [
       "VigorConnect"
@@ -3159,11 +3255,11 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2009-3953": {
-    "cve_id": "CVE-2009-3953",
-    "vendor": "Adobe",
+  "CVE-2019-7194": {
+    "cve_id": "CVE-2019-7194",
+    "vendor": "QNAP",
     "affected_versions": [
-      "Acrobat and Reader"
+      "Photo Station"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
@@ -3183,11 +3279,11 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2019-7194": {
-    "cve_id": "CVE-2019-7194",
-    "vendor": "QNAP",
+  "CVE-2009-3953": {
+    "cve_id": "CVE-2009-3953",
+    "vendor": "Adobe",
     "affected_versions": [
-      "Photo Station"
+      "Acrobat and Reader"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
@@ -3267,11 +3363,11 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2019-17026": {
-    "cve_id": "CVE-2019-17026",
-    "vendor": "Mozilla",
+  "CVE-2019-16256": {
+    "cve_id": "CVE-2019-16256",
+    "vendor": "SIMalliance",
     "affected_versions": [
-      "Firefox and Thunderbird"
+      "Toolbox Browser"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
@@ -3279,11 +3375,47 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2020-7961": {
-    "cve_id": "CVE-2020-7961",
-    "vendor": "Liferay",
+  "CVE-2019-18935": {
+    "cve_id": "CVE-2019-18935",
+    "vendor": "Progress",
     "affected_versions": [
-      "Liferay Portal"
+      "Telerik UI for ASP.NET AJAX"
+    ],
+    "mitigation_steps": [
+      "Apply updates per vendor instructions."
+    ],
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2019-15949": {
+    "cve_id": "CVE-2019-15949",
+    "vendor": "Nagios",
+    "affected_versions": [
+      "Nagios XI"
+    ],
+    "mitigation_steps": [
+      "Apply updates per vendor instructions."
+    ],
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2021-28664": {
+    "cve_id": "CVE-2021-28664",
+    "vendor": "Arm",
+    "affected_versions": [
+      "Mali Graphics Processing Unit (GPU)"
+    ],
+    "mitigation_steps": [
+      "Apply updates per vendor instructions."
+    ],
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2019-17026": {
+    "cve_id": "CVE-2019-17026",
+    "vendor": "Mozilla",
+    "affected_versions": [
+      "Firefox and Thunderbird"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
@@ -3315,47 +3447,11 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2021-28664": {
-    "cve_id": "CVE-2021-28664",
-    "vendor": "Arm",
+  "CVE-2020-7961": {
+    "cve_id": "CVE-2020-7961",
+    "vendor": "Liferay",
     "affected_versions": [
-      "Mali Graphics Processing Unit (GPU)"
-    ],
-    "mitigation_steps": [
-      "Apply updates per vendor instructions."
-    ],
-    "verified": true,
-    "status": "official_patch"
-  },
-  "CVE-2019-15949": {
-    "cve_id": "CVE-2019-15949",
-    "vendor": "Nagios",
-    "affected_versions": [
-      "Nagios XI"
-    ],
-    "mitigation_steps": [
-      "Apply updates per vendor instructions."
-    ],
-    "verified": true,
-    "status": "official_patch"
-  },
-  "CVE-2019-18935": {
-    "cve_id": "CVE-2019-18935",
-    "vendor": "Progress",
-    "affected_versions": [
-      "Telerik UI for ASP.NET AJAX"
-    ],
-    "mitigation_steps": [
-      "Apply updates per vendor instructions."
-    ],
-    "verified": true,
-    "status": "official_patch"
-  },
-  "CVE-2019-16256": {
-    "cve_id": "CVE-2019-16256",
-    "vendor": "SIMalliance",
-    "affected_versions": [
-      "Toolbox Browser"
+      "Liferay Portal"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."

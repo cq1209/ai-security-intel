@@ -4,6 +4,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from typing import Dict
 
+from app.cleaners import filtering as ai_filter
 from app.db import raw_collection, structured_collection
 
 
@@ -20,6 +21,7 @@ def save_raw(source_id: str, data: Dict) -> None:
 
 
 def save_structured(item: Dict) -> None:
+    item = ai_filter.tag_item(item)
     structured_collection().update_one(
         {"fingerprint": item["fingerprint"]},
         {"$set": item},

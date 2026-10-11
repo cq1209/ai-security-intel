@@ -544,6 +544,17 @@ def build_tags(text: str) -> List[str]:
     return tags
 
 
+def tag_item(item: Dict) -> Dict:
+    """Set A-F tags and ai_relevant for a structured item from its text."""
+    text = " ".join([item.get("title") or "", item.get("description") or ""])
+    tags = build_tags(text)
+    if tags:
+        item["tags"] = tags
+    category = tag_category(text)
+    item["ai_relevant"] = category is not None and category != "F"
+    return item
+
+
 # ---------------------------------------------------------------------------
 # NVD-specific helpers
 # ---------------------------------------------------------------------------

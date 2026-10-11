@@ -166,6 +166,7 @@ def save_raw(cve: Dict) -> None:
 
 
 def save_structured(item: Dict) -> None:
+    item = ai_filter.tag_item(item)
     structured_collection().update_one(
         {"fingerprint": item["fingerprint"]},
         {"$set": item},
