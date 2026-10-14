@@ -141,6 +141,10 @@ def run_enrichment_pipeline(limit: Optional[int] = None, force: bool = False) ->
     structured = list(cursor)
 
     fingerprints = [item.get("fingerprint") for item in structured if item.get("fingerprint")]
+    if limit is None:
+        # Drop enriched docs whose source item was removed by dedup/refiltering.
+        enriched_collection().delete_many({"fingerprint": {"$nin": fingerprints}})
+
     already_enriched: Dict = {}
     if not force:
         already_enriched = {

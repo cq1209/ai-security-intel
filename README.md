@@ -50,7 +50,30 @@ tests/          单元测试与准确率回归
 
 # 准确率评估
 .\.venv\Scripts\python.exe scripts\evaluate_accuracy.py
+
+# 长期运行服务（采集调度 + 富化 + HTTP API 一起跑）
+.\.venv\Scripts\python.exe serve.py
 ```
+
+## 对外服务
+
+`serve.py` 会启动一个常驻服务，同时运行：
+
+- 后台采集调度（NVD/GHSA/KEV/厂商等按周期自动采集）
+- 增量富化（每 2 小时）
+- HTTP API（默认 `http://0.0.0.0:8000`）
+
+主要接口：
+
+| 接口 | 说明 |
+| --- | --- |
+| `GET /health` | 健康检查与数据量 |
+| `GET /intel` | 情报列表，支持 `source`、`ai_relevant`、`tag`、`limit`、`offset` 筛选 |
+| `GET /intel/{intel_id}` | 单条情报详情 |
+| `GET /stats` | 数据统计（来源、分类、六维覆盖） |
+| `POST /webhook/intel` | 接收外部推送的情报 |
+
+接口文档见 `docs/服务接口说明.md`。
 
 ## 交付文件
 
