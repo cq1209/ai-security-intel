@@ -1,0 +1,147 @@
+2026-10-14 19:28:11,825 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:28:11,826 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:28:11,843 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:28:11,843 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:28:11,844 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:28:11,844 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:28:11,844 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:28:11,845 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:28:11,845 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:28:11,845 INFO apscheduler.scheduler Added job "collect_nvd_recent" to job store "default"
+2026-10-14 19:28:11,845 INFO apscheduler.scheduler Added job "collect_ghsa" to job store "default"
+2026-10-14 19:28:11,845 INFO apscheduler.scheduler Added job "collect_kev" to job store "default"
+2026-10-14 19:28:11,845 INFO apscheduler.scheduler Added job "collect_vendor_releases" to job store "default"
+2026-10-14 19:28:11,845 INFO apscheduler.scheduler Added job "collect_security_community" to job store "default"
+2026-10-14 19:28:11,845 INFO apscheduler.scheduler Added job "collect_arxiv" to job store "default"
+2026-10-14 19:28:11,845 INFO apscheduler.scheduler Added job "collect_domestic_vendors" to job store "default"
+2026-10-14 19:28:11,846 INFO apscheduler.scheduler Added job "collect_twitter_alerts" to job store "default"
+2026-10-14 19:28:11,846 INFO apscheduler.scheduler Added job "run_enrichment_pipeline" to job store "default"
+2026-10-14 19:28:11,846 INFO apscheduler.scheduler Scheduler started
+2026-10-14 19:28:11,847 INFO apscheduler.scheduler Scheduler has been shut down
+2026-10-14 19:30:10,788 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:10,788 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:10,790 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Added job "collect_nvd_recent" to job store "default"
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Added job "collect_ghsa" to job store "default"
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Added job "collect_kev" to job store "default"
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Added job "collect_vendor_releases" to job store "default"
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Added job "collect_security_community" to job store "default"
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Added job "collect_arxiv" to job store "default"
+2026-10-14 19:30:10,791 INFO apscheduler.scheduler Added job "collect_domestic_vendors" to job store "default"
+2026-10-14 19:30:10,792 INFO apscheduler.scheduler Added job "collect_twitter_alerts" to job store "default"
+2026-10-14 19:30:10,792 INFO apscheduler.scheduler Added job "run_enrichment_pipeline" to job store "default"
+2026-10-14 19:30:10,792 INFO apscheduler.scheduler Scheduler started
+2026-10-14 19:30:56,905 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:56,905 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:56,919 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:56,919 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:56,919 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:56,919 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:56,919 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:56,919 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:56,919 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:30:56,919 INFO apscheduler.scheduler Added job "collect_nvd_recent" to job store "default"
+2026-10-14 19:30:56,920 INFO apscheduler.scheduler Added job "collect_ghsa" to job store "default"
+2026-10-14 19:30:56,920 INFO apscheduler.scheduler Added job "collect_kev" to job store "default"
+2026-10-14 19:30:56,920 INFO apscheduler.scheduler Added job "collect_vendor_releases" to job store "default"
+2026-10-14 19:30:56,920 INFO apscheduler.scheduler Added job "collect_security_community" to job store "default"
+2026-10-14 19:30:56,920 INFO apscheduler.scheduler Added job "collect_arxiv" to job store "default"
+2026-10-14 19:30:56,920 INFO apscheduler.scheduler Added job "collect_domestic_vendors" to job store "default"
+2026-10-14 19:30:56,920 INFO apscheduler.scheduler Added job "collect_twitter_alerts" to job store "default"
+2026-10-14 19:30:56,920 INFO apscheduler.scheduler Added job "run_enrichment_pipeline" to job store "default"
+2026-10-14 19:30:56,920 INFO apscheduler.scheduler Scheduler started
+2026-10-14 19:30:56,921 INFO apscheduler.scheduler Scheduler has been shut down
+2026-10-14 19:31:27,149 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:31:27,150 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:31:27,151 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:31:27,151 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:31:27,151 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:31:27,151 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:31:27,151 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:31:27,151 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:31:27,152 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:31:27,152 INFO apscheduler.scheduler Added job "collect_nvd_recent" to job store "default"
+2026-10-14 19:31:27,152 INFO apscheduler.scheduler Added job "collect_ghsa" to job store "default"
+2026-10-14 19:31:27,152 INFO apscheduler.scheduler Added job "collect_kev" to job store "default"
+2026-10-14 19:31:27,152 INFO apscheduler.scheduler Added job "collect_vendor_releases" to job store "default"
+2026-10-14 19:31:27,152 INFO apscheduler.scheduler Added job "collect_security_community" to job store "default"
+2026-10-14 19:31:27,152 INFO apscheduler.scheduler Added job "collect_arxiv" to job store "default"
+2026-10-14 19:31:27,152 INFO apscheduler.scheduler Added job "collect_domestic_vendors" to job store "default"
+2026-10-14 19:31:27,152 INFO apscheduler.scheduler Added job "collect_twitter_alerts" to job store "default"
+2026-10-14 19:31:27,152 INFO apscheduler.scheduler Added job "run_enrichment_pipeline" to job store "default"
+2026-10-14 19:31:27,152 INFO apscheduler.scheduler Scheduler started
+2026-10-14 19:31:27,153 INFO root Serving AI security intel API on http://0.0.0.0:8000
+2026-10-14 19:31:27,153 ERROR root Service crashed
+Traceback (most recent call last):
+  File "C:\Users\16565\AppData\Local\Programs\Python\Python314\Lib\logging\config.py", line 583, in configure
+    formatters[name] = self.configure_formatter(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~^
+                                        formatters[name])
+                                        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\16565\AppData\Local\Programs\Python\Python314\Lib\logging\config.py", line 693, in configure_formatter
+    result = self.configure_custom(config)
+  File "C:\Users\16565\AppData\Local\Programs\Python\Python314\Lib\logging\config.py", line 487, in configure_custom
+    result = c(**kwargs)
+  File "D:\Codex\2026-09-26\new-chat\ai-security-intel\.venv\Lib\site-packages\uvicorn\logging.py", line 42, in __init__
+    self.use_colors = sys.stdout.isatty()
+                      ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'isatty'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Codex\2026-09-26\new-chat\ai-security-intel\serve.py", line 26, in main
+    uvicorn.run(app, host=host, port=port)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Codex\2026-09-26\new-chat\ai-security-intel\.venv\Lib\site-packages\uvicorn\main.py", line 561, in run
+    config = Config(
+        app,
+    ...<49 lines>...
+        reset_contextvars=reset_contextvars,
+    )
+  File "D:\Codex\2026-09-26\new-chat\ai-security-intel\.venv\Lib\site-packages\uvicorn\config.py", line 303, in __init__
+    self.configure_logging()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Codex\2026-09-26\new-chat\ai-security-intel\.venv\Lib\site-packages\uvicorn\config.py", line 398, in configure_logging
+    logging.config.dictConfig(self.log_config)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\16565\AppData\Local\Programs\Python\Python314\Lib\logging\config.py", line 946, in dictConfig
+    dictConfigClass(config).configure()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\16565\AppData\Local\Programs\Python\Python314\Lib\logging\config.py", line 586, in configure
+    raise ValueError('Unable to configure '
+                     'formatter %r' % name) from e
+ValueError: Unable to configure formatter 'default'
+2026-10-14 19:31:27,185 INFO apscheduler.scheduler Scheduler has been shut down
+2026-10-14 19:32:37,040 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:32:37,040 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:32:37,041 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:32:37,041 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Added job "collect_nvd_recent" to job store "default"
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Added job "collect_ghsa" to job store "default"
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Added job "collect_kev" to job store "default"
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Added job "collect_vendor_releases" to job store "default"
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Added job "collect_security_community" to job store "default"
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Added job "collect_arxiv" to job store "default"
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Added job "collect_domestic_vendors" to job store "default"
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Added job "collect_twitter_alerts" to job store "default"
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Added job "run_enrichment_pipeline" to job store "default"
+2026-10-14 19:32:37,042 INFO apscheduler.scheduler Scheduler started
+2026-10-14 19:32:37,043 INFO root Serving AI security intel API on http://0.0.0.0:8000
+2026-10-14 19:32:37,067 INFO uvicorn.error Started server process [12836]
+2026-10-14 19:32:37,067 INFO uvicorn.error Waiting for application startup.
+2026-10-14 19:32:37,068 INFO uvicorn.error Application startup complete.
+2026-10-14 19:32:37,068 INFO uvicorn.error Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-10-14 19:33:07,045 INFO uvicorn.access 127.0.0.1:58634 - "GET /health HTTP/1.1" 200
+2026-10-14 19:33:07,094 INFO uvicorn.access 127.0.0.1:64613 - "GET /stats HTTP/1.1" 200
