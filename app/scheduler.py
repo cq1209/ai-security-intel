@@ -26,6 +26,7 @@ def create_scheduler() -> BackgroundScheduler:
         replace_existing=True,
         coalesce=True,
         max_instances=1,
+        misfire_grace_time=3600,
     )
     scheduler.add_job(
         collect_ghsa,
@@ -35,6 +36,7 @@ def create_scheduler() -> BackgroundScheduler:
         replace_existing=True,
         coalesce=True,
         max_instances=1,
+        misfire_grace_time=3600,
     )
     scheduler.add_job(
         collect_kev,
@@ -45,6 +47,7 @@ def create_scheduler() -> BackgroundScheduler:
         replace_existing=True,
         coalesce=True,
         max_instances=1,
+        misfire_grace_time=3600,
     )
     scheduler.add_job(
         collect_vendor_releases,
@@ -54,6 +57,7 @@ def create_scheduler() -> BackgroundScheduler:
         replace_existing=True,
         coalesce=True,
         max_instances=1,
+        misfire_grace_time=3600,
     )
     scheduler.add_job(
         collect_security_community,
@@ -63,6 +67,7 @@ def create_scheduler() -> BackgroundScheduler:
         replace_existing=True,
         coalesce=True,
         max_instances=1,
+        misfire_grace_time=3600,
     )
     scheduler.add_job(
         collect_arxiv,
@@ -73,6 +78,7 @@ def create_scheduler() -> BackgroundScheduler:
         replace_existing=True,
         coalesce=True,
         max_instances=1,
+        misfire_grace_time=3600,
     )
     scheduler.add_job(
         collect_domestic_vendors,
@@ -83,6 +89,7 @@ def create_scheduler() -> BackgroundScheduler:
         replace_existing=True,
         coalesce=True,
         max_instances=1,
+        misfire_grace_time=3600,
     )
     scheduler.add_job(
         collect_twitter_alerts,
@@ -92,6 +99,7 @@ def create_scheduler() -> BackgroundScheduler:
         replace_existing=True,
         coalesce=True,
         max_instances=1,
+        misfire_grace_time=3600,
     )
     scheduler.add_job(
         run_enrichment_pipeline,
@@ -101,6 +109,7 @@ def create_scheduler() -> BackgroundScheduler:
         replace_existing=True,
         coalesce=True,
         max_instances=1,
+        misfire_grace_time=3600,
     )
     return scheduler
 
