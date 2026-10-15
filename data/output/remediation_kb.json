@@ -719,6 +719,54 @@
     "verified": false,
     "status": "temporary_mitigation"
   },
+  "CVE-2026-59180": {
+    "cve_id": "CVE-2026-59180",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/caronc/apprise/commit/68c0aef218055e4586cf4605fd6b56358f5f462d",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 1.11.0 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "vendor:langchain:langchain-openai==1.7.2": {
+    "cve_id": null,
+    "vendor": "langchain",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade langchain to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
+  "CVE-2026-110719": {
+    "cve_id": "CVE-2026-110719",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/Portkey-AI/gateway",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/Portkey-AI/gateway"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2026-110220": {
+    "cve_id": "CVE-2026-110220",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/kubeflow/hub",
+    "mitigation_steps": [
+      "Upgrade the affected component to a patched version. See https://github.com/kubeflow/hub"
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
   "CVE-2026-108962": {
     "cve_id": "CVE-2026-108962",
     "vendor": null,
@@ -730,6 +778,18 @@
     "workaround": null,
     "verified": true,
     "status": "official_patch"
+  },
+  "vendor:ollama:v0.40.4": {
+    "cve_id": null,
+    "vendor": "ollama",
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade ollama to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
   },
   "CVE-2026-109311": {
     "cve_id": "CVE-2026-109311",
@@ -2655,6 +2715,18 @@
     "verified": true,
     "status": "official_patch"
   },
+  "CVE-2026-53710": {
+    "cve_id": "CVE-2026-53710",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/IBM/mcp-context-forge/commit/63a2900e6301b9c8a483a38d3737a1beb3a7ce89",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 1.0.2 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
+  },
   "CVE-2026-61539": {
     "cve_id": "CVE-2026-61539",
     "vendor": null,
@@ -2823,7 +2895,7 @@
     "verified": false,
     "status": "temporary_mitigation"
   },
-  "GHSA-mhgx-w3w5-2rvc": {
+  "GHSA-wj29-gm8v-33x8": {
     "cve_id": null,
     "vendor": null,
     "affected_versions": [],
@@ -2859,19 +2931,7 @@
     "verified": false,
     "status": "temporary_mitigation"
   },
-  "GHSA-wj29-gm8v-33x8": {
-    "cve_id": null,
-    "vendor": null,
-    "affected_versions": [],
-    "patch_url": null,
-    "mitigation_steps": [
-      "Upgrade the affected AI component to the latest patched version."
-    ],
-    "workaround": null,
-    "verified": false,
-    "status": "temporary_mitigation"
-  },
-  "GHSA-rrqj-82cc-g6h4": {
+  "GHSA-mhgx-w3w5-2rvc": {
     "cve_id": null,
     "vendor": null,
     "affected_versions": [],
@@ -2895,6 +2955,18 @@
     "verified": false,
     "status": "temporary_mitigation"
   },
+  "GHSA-rrqj-82cc-g6h4": {
+    "cve_id": null,
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": null,
+    "mitigation_steps": [
+      "Upgrade the affected AI component to the latest patched version."
+    ],
+    "workaround": null,
+    "verified": false,
+    "status": "temporary_mitigation"
+  },
   "vendor:pytorch:v2.13.0": {
     "cve_id": null,
     "vendor": "triton",
@@ -2906,6 +2978,18 @@
     "workaround": null,
     "verified": false,
     "status": "temporary_mitigation"
+  },
+  "CVE-2026-55786": {
+    "cve_id": "CVE-2026-55786",
+    "vendor": null,
+    "affected_versions": [],
+    "patch_url": "https://github.com/flytohub/flyto-core/commit/db7f116b1d3c5dcf94aded00d14118f81f3e225e",
+    "mitigation_steps": [
+      "Upgrade the affected component to version 2.26.4 or later."
+    ],
+    "workaround": null,
+    "verified": true,
+    "status": "official_patch"
   },
   "GHSA-q8qp-8jq6-78mc": {
     "cve_id": null,
@@ -3327,11 +3411,11 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2019-7194": {
-    "cve_id": "CVE-2019-7194",
-    "vendor": "QNAP",
+  "CVE-2009-3953": {
+    "cve_id": "CVE-2009-3953",
+    "vendor": "Adobe",
     "affected_versions": [
-      "Photo Station"
+      "Acrobat and Reader"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
@@ -3351,11 +3435,11 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2009-3953": {
-    "cve_id": "CVE-2009-3953",
-    "vendor": "Adobe",
+  "CVE-2019-7194": {
+    "cve_id": "CVE-2019-7194",
+    "vendor": "QNAP",
     "affected_versions": [
-      "Acrobat and Reader"
+      "Photo Station"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
@@ -3435,35 +3519,11 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2021-28664": {
-    "cve_id": "CVE-2021-28664",
-    "vendor": "Arm",
-    "affected_versions": [
-      "Mali Graphics Processing Unit (GPU)"
-    ],
-    "mitigation_steps": [
-      "Apply updates per vendor instructions."
-    ],
-    "verified": true,
-    "status": "official_patch"
-  },
-  "CVE-2019-15949": {
-    "cve_id": "CVE-2019-15949",
-    "vendor": "Nagios",
-    "affected_versions": [
-      "Nagios XI"
-    ],
-    "mitigation_steps": [
-      "Apply updates per vendor instructions."
-    ],
-    "verified": true,
-    "status": "official_patch"
-  },
-  "CVE-2019-18935": {
-    "cve_id": "CVE-2019-18935",
+  "CVE-2017-9248": {
+    "cve_id": "CVE-2017-9248",
     "vendor": "Progress",
     "affected_versions": [
-      "Telerik UI for ASP.NET AJAX"
+      "ASP.NET AJAX and Sitefinity"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
@@ -3483,11 +3543,47 @@
     "verified": true,
     "status": "official_patch"
   },
-  "CVE-2017-9248": {
-    "cve_id": "CVE-2017-9248",
+  "CVE-2019-18935": {
+    "cve_id": "CVE-2019-18935",
     "vendor": "Progress",
     "affected_versions": [
-      "ASP.NET AJAX and Sitefinity"
+      "Telerik UI for ASP.NET AJAX"
+    ],
+    "mitigation_steps": [
+      "Apply updates per vendor instructions."
+    ],
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2019-15949": {
+    "cve_id": "CVE-2019-15949",
+    "vendor": "Nagios",
+    "affected_versions": [
+      "Nagios XI"
+    ],
+    "mitigation_steps": [
+      "Apply updates per vendor instructions."
+    ],
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2021-28664": {
+    "cve_id": "CVE-2021-28664",
+    "vendor": "Arm",
+    "affected_versions": [
+      "Mali Graphics Processing Unit (GPU)"
+    ],
+    "mitigation_steps": [
+      "Apply updates per vendor instructions."
+    ],
+    "verified": true,
+    "status": "official_patch"
+  },
+  "CVE-2019-17026": {
+    "cve_id": "CVE-2019-17026",
+    "vendor": "Mozilla",
+    "affected_versions": [
+      "Firefox and Thunderbird"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
@@ -3512,18 +3608,6 @@
     "vendor": "DrayTek",
     "affected_versions": [
       "Multiple Vigor Routers"
-    ],
-    "mitigation_steps": [
-      "Apply updates per vendor instructions."
-    ],
-    "verified": true,
-    "status": "official_patch"
-  },
-  "CVE-2019-17026": {
-    "cve_id": "CVE-2019-17026",
-    "vendor": "Mozilla",
-    "affected_versions": [
-      "Firefox and Thunderbird"
     ],
     "mitigation_steps": [
       "Apply updates per vendor instructions."
