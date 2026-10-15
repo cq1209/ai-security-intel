@@ -9,3 +9,6 @@ __pycache__/
 # æœ¬åœ°é‡‡é›†çš„åŸå§‹æ•°æ®
 data/raw/*
 !data/raw/.gitkeep
+
+# ÔËĞĞÈÕÖ¾
+*.log

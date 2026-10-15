@@ -1,15 +1,8 @@
-# Copy the hidden startup script to the Startup folder (no admin required).
-$src = "D:\Codex\2026-09-26\new-chat\ai-security-intel\start_service.vbs"
-$startup = Join-Path $env:APPDATA "Microsoft\Windows\Start Menu\Programs\Startup"
-$dst = Join-Path $startup "start_service.vbs"
-
-if (-not (Test-Path $startup)) {
-    New-Item -ItemType Directory -Path $startup -Force | Out-Null
-}
-
-if ((Resolve-Path $src).Path -eq $dst) {
-    Write-Output "Source and destination are the same file, skip."
-} else {
-    Copy-Item -Path $src -Destination $dst -Force
-    Write-Output "Copied to Startup folder: $dst"
-}
+# Register a boot-time task (runs before login, as SYSTEM).
+# Must be run from an elevated PowerShell (Run as administrator).
+$action = New-ScheduledTaskAction -Execute "D:\Codex\2026-09-26\new-chat\ai-security-intel\start_service.bat"
+$trigger = New-ScheduledTaskTrigger -AtStartup
+$principal = New-ScheduledTaskPrincipal -UserId "SYSTEM" -RunLevel Highest
+$settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 1)
+Register-ScheduledTask -TaskName "AISecurityIntelService" -Action $action -Trigger $trigger -Principal $principal -Settings $settings -Force
+Write-Output "Registered boot-time task: AISecurityIntelService"
